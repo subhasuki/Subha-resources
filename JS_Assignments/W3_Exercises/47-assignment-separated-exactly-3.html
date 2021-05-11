@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ab_Check(str)
+ {
+    return (/a...b/).test(str) || (/b...a/).test(str);
+ }
+
+document.write(ab_Check("Chainsbreak"));
+document.write("<br>");
+document.write(ab_Check("pane borrowed"));
+document.write("<br>");
+document.write(ab_Check("abCheck"));
+document.write("<br>");
+    </script>
+</body>
+</html>

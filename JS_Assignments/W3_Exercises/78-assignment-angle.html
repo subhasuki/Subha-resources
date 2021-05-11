@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function angle_Type(angle) {
+            if(angle < 90) {
+                return "Acute angle.";
+            }
+            if(angle === 90) {
+                return "Right angle.";
+            }
+            if(angle < 180) {
+                return "Obtuse angle.";
+            }
+            return "Straight angle.";
+            }
+
+            document.write(angle_Type(47));
+            document.write(angle_Type(90));
+            document.write(angle_Type(145));
+            document.write(angle_Type(180));
+
+    </script>
+</body>
+</html>

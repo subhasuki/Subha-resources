@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate_string</title>
+</head>
+<body>
+
+
+    <script>
+
+        var myVar = setInterval(myFunction, 1000);
+            
+        var word = 'Subha@suki';
+        var newArray = word.split('');
+        // document.write(newArray);
+
+        function myFunction() {
+        var letter = newArray.pop();
+        // document.write(letter);
+        var newWord = newArray.unshift(letter);
+        // document.write(newWord);
+        var theWord = newArray.join('');
+        // document.write(theWord);
+        document.getElementById('moveIt').innerHTML = theWord;
+        }
+
+    </script>
+
+<p id = 'moveIt'></p>
+    
+</body>
+</html>

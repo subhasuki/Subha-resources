@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function find_third_number(x, y, z) {
+        if((x!==y) && (x!==z) && (y!==z))
+            return "Three numbers are unequal.";
+            if(x==y) return z;
+            if(x==z) return y;
+            return x;
+        }
+
+        document.write(find_third_number(1,2,2));
+        document.write("<br>");
+        document.write(find_third_number(1,1,2));
+        document.write("<br>");
+        document.write(find_third_number(1,2,3));
+        document.write("<br>");
+
+    </script>
+</body>
+</html>

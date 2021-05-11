@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check_arithmetic_Expression(x, y, z) {
+        return x + y == z || x * y == z || x / y == z || x - y == z;
+        }
+
+        document.write(check_arithmetic_Expression(10, 25, 35));
+        document.write("<br>");
+        document.write(check_arithmetic_Expression(10, 25, 250));
+        document.write("<br>");
+        document.write(check_arithmetic_Expression(30, 25, 5));
+        document.write("<br>");
+        document.write(check_arithmetic_Expression(100, 25, 4.0));
+        document.write("<br>");
+        document.write(check_arithmetic_Expression(100, 25, 25));
+        document.write("<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checking_numbers(x, y, divisor) {
+        if(x % divisor === 0 && y % divisor === 0 || x % divisor !== 0 && y % divisor !==
+            0) {
+            return true;
+        }
+        return false;
+        }
+
+        document.write(checking_numbers(10, 25, 5));
+        document.write("<br>");
+        document.write(checking_numbers(10, 20, 5));
+        document.write("<br>");
+        document.write(checking_numbers(10, 20, 4));
+        document.write("<br>");
+
+
+    </script>
+</body>
+</html>

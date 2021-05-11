@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">reduceRight</button>
+
+    <p>Sum of numbers in array: <span id="demo"></span></p>
+    <script>
+        var numbers = [175, 50, 25];
+
+        document.getElementById("demo").innerHTML = numbers.reduceRight(myFunc);
+
+        function myFunc(total, num) {
+        return total - num;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function city_name(str) {
+        if (str.length >= 3 && ((str.substring(0, 3) == 'Los')
+                                || (str.substring(0, 3) == 'New')))
+        
+            {
+                return str;
+            }
+
+        return '';
+        }
+
+        document.write(city_name("New York"));
+        document.write("<br>");
+        document.write(city_name("Los Angeles"));
+        document.write("<br>");
+        document.write(city_name("London"));
+        document.write("<br>");
+    </script>
+</body>
+</html>

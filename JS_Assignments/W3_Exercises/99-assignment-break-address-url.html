@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function break_address(url_add) {
+            var data = url_add.split("://")
+            var protocol = data[0];
+            data = data[1].split(".com");
+            var domain = data[0];
+            data = data[1].split("/");
+
+            if(data[1]){
+                return [protocol,domain,data[1]]
+            }
+
+            return [protocol,domain]
+        }
+
+        var url_add = "https://www.w3resource.com/javascript-exercises/"
+       document.write("Original address: "+url_add);
+       document.write("<br>");
+       document.write(break_address(url_add));
+       document.write("<br>");
+
+    </script>
+</body>
+</html>

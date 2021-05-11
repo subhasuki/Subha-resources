@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check8(x, y) {
+  if (x == 8 || y == 8) {
+    return true;
+  }
+
+  if (x + y == 8 || Math.abs(x - y) == 8)
+  {
+    return true;
+  }
+
+  return false;
+}
+
+document.write(check8(7, 8));
+document.write("<br>");
+document.write(check8(16, 8));
+document.write("<br>");
+document.write(check8(24, 32));
+document.write("<br>");
+document.write(check8(17, 18));
+document.write("<br>");
+    </script>
+</body>
+</html>

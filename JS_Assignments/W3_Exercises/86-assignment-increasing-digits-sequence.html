@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function is_increasing_digits_Sequence(num) {
+
+        var arr_num = ('' + num).split('');
+
+        for (var i = 0; i < arr_num.length - 1; i++) {
+        if (parseInt(arr_num[i]) >= parseInt(arr_num[i + 1]))
+            return false;
+        }
+        return true;
+        }
+
+        document.write(is_increasing_digits_Sequence(123));
+        document.write("<br>");
+        document.write(is_increasing_digits_Sequence(1223));
+        document.write("<br>");
+        document.write(is_increasing_digits_Sequence(45677));
+        document.write("<br>");
+
+    </script>
+</body>
+</html>

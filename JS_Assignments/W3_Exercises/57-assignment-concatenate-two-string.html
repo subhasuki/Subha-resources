@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function str_con_cat(str1, str2) {
+        const m = Math.min(str1.length, str2.length);
+
+        return str1.substring(str1.length - m) + str2.substring(str2.length - m);
+        }
+
+        document.write(str_con_cat("Python", "JS"));
+        document.write("<br>");
+        document.write(str_con_cat("ab", "cdef"));
+        document.write("<br>");
+    </script>
+</body>
+</html>
