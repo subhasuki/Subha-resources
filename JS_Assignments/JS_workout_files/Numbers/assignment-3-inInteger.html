@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+    <script>
+        function myFunction() {
+        var res = "";
+        res = res + Number.isInteger(123) + ": 123<br>";
+        res = res + Number.isInteger(-123) + ": -123<br>";
+        res = res + Number.isInteger(5-2) + ": 5-2<br>";
+        res = res + Number.isFinite(0) + ": 0<br>";
+        res = res + Number.isInteger(0.5) + ": 0.5<br>";
+        res = res + Number.isInteger('123') + ": '123'<br>";
+        res = res + Number.isInteger(false) + ": false<br>";
+        res = res + Number.isInteger(Infinity) + ": Infinity<br>";
+        res = res + Number.isInteger(-Infinity) + ": -Infinity<br>";
+        res = res + Number.isInteger(0 / 0) + ": 0 / 0<br>";
+
+        document.getElementById("demo").innerHTML = res;
+        }
+    </script>
+</body>
+</html>

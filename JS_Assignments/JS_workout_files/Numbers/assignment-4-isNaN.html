@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">isNaN</button>
+
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+        var res = "";
+        res = res + Number.isNaN(123) + ": 123<br>";
+        res = res + Number.isNaN(-1.23) + ": -1.23<br>";
+        res = res + Number.isNaN(5-2) + ": 5-2<br>";
+        res = res + Number.isNaN(0) + ": 0<br>";
+        res = res + Number.isNaN('123') + ": '123'<br>";
+        res = res + Number.isNaN('Hello') + ": 'Hello'<br>";
+        res = res + Number.isNaN('2005/12/12') + ": '2005/12/12'<br>";
+        res = res + Number.isNaN('') + ": ''<br>";
+        res = res + Number.isNaN(true) + ": true<br>";
+        res = res + Number.isNaN(undefined) + ": undefined<br>";
+        res = res + Number.isNaN('NaN') + ": 'NaN'<br>";
+        res = res + Number.isNaN(NaN) + ": NaN<br>";
+        res = res + Number.isNaN(0 / 0) + ": 0 / 0<br>";
+
+        document.getElementById("demo").innerHTML = res;
+        }
+    </script>
+</body>
+</html>
