@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  // 00000000000000000000000000000000 = 32 leading zeros
+  var a = Math.clz32(0);
+  
+  // 00000000000000000000000000000001 = 31 leading zeros
+  var b = Math.clz32(1);
+  
+  // 00000000000000000000000000000010 = 30 leading zeros
+  var c = Math.clz32(2);
+  
+  // 00000000000000000000000000000100 = 29 leading zeros
+  var d= Math.clz32(4);
+  
+  var x = a + "<br>" + b + "<br>" + c + "<br>" + d;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+</body>
+</html>
