@@ -1,0 +1,17 @@
+id --- ms01, optn onchange
+name -- aaa; input                                              
+
+///////////////////                                table
+
+produ = soap; input                     s.no   produ  quan   amt     action          
+code = 12;    input                       1     soap    2    40.30    delete
+per  = 20;    input  onchange             2     oil     2    100.20   delete
+quan = 2;     input  onchange             3     chocolate 1   10.00   delete 
+amount = quan * per; calc 
+                                                       total 141.00   
+                                                       GST / button
+Add // button                                 GST 12% 141 % 12 = 160
+
+q = document.querySelector("quan").value;                 Amount = RS.160 
+
+                                                            Print/Bill | window print
