@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="in-form">
+
+            <h1>Happy Mart</h1>
+    
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" name="myform">
+                
+                        <label>CustomerID</label><label class="validation-error hide" id="pnameValidationError">This field is required.</label>
+                        <input type="text" name="ccode" id="ccode"  value="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required />
+                    
+                
+                        <label for="cname">CustomerName</label>
+                        <input type="text" name="cname" id="cname" onKeyPress="return ValidateAlpha(event);" required />
+                    
+                        
+                
+                        <label name="pcode">ProductCode</label>
+                        <input type="text" name="pcode" id="pcode"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required />
+                    
+                
+                        <label name="pname">ProductName</label>
+                        <input type="text" name="pname" id="pname"  onKeyPress="return ValidateAlpha(event);" required />
+                    
+                
+                        <label name="quan">Quantity</label>
+                        <input type="text" name="quan" id="quan" oninput="mulqun()"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required />
+                    
+                
+                        <label name="punit">Per_Unit_Price</label>
+                        <input type="text" name="punit" id="punit" oninput="mulqun()" onkeypress="return pointfun(event)" required />
+                    
+                
+                        <label name="amount">Amount</label>
+                        <input type="text" name="amount" id="amount"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" required />
+                    
+                    <!-- <div class="form-action-buttons"> -->
+                        <input type="submit" id="addstyle" value="Submit">
+                    <!-- </div> -->
+                </form>
+        </div>
+                <div class="tbl-form">
+                <table class="list" id="productList" style="overflow: scroll;">
+                    <thead>
+                        <tr>
+                            <th>ProductCode</th>
+                            <th>ProductName</th>
+                            <th>Quantity</th>
+                            <th>Unitprice</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="protbody">
+
+                    </tbody>
+                </table>
+                
+                <div class="footer">
+
+                    <input id="add_tot" onclick="totbtn()" class="addstyle" value="Total" type="button">
+                    <input id="add_tot1" onclick="printval('pvalid')" class="addstyle" value="Print" type="button"><br><br>
+                          
+                    <div style="background-color: #dddddd;width:70%;font-size: 20px;" id="pvalid">
+                        &nbsp;&nbsp;Net Amount:&nbsp;RS-<span id="val" class="amtsty"></span ><br><br>
+                        &nbsp;&nbsp;GST Amount:&nbsp;RS-<span  id="gst-amount" class="amtsty"></span ><br><br>
+                        &nbsp;&nbsp;Total-Amount:&nbsp;RS-<span  id="total-amount" class="amtsty"></span ><br>
+                   </div>
+                  </div>
+                </div>
+                </div>
+          
+    <script src="billscript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+body{
+    overflow: hidden;
+}
+body > table{
+    width: 80%;
+  
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+.container{
+    max-width: 1310px;
+    width:100%;
+    height: 672px;
+    background-image: url('../Bill_app/img/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;   
+    display: grid;
+    grid-template-areas: 'in-form tbl-form'; 
+
+}
+.in-form{
+    margin-left:50px;
+    /* padding-top: 50px; */
+    background-color: transparent;
+    width:500px;
+    height: 500px;
+    /* margin-top: 50px; */
+    /* border: 1px solid; */
+    grid-area: in-form;
+}
+label{
+    /* padding:20px; */
+    margin-right: 20px;
+}
+
+
+
+
+.bline{
+    border-bottom: 1px solid gray;
+}
+
+#addstyle{
+    background-image: linear-gradient(to right, rgb(185, 28, 88) ,red);
+    border: none;
+    color: white;
+    /* padding: 10px 10px 25px 10px; */
+    width:120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    font-style: bold;
+    border-radius: 4px;
+    margin-left: 100px;
+    outline: none;
+}
+.tbl-form{
+    grid-area: tbl-form;
+    width: 500px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+    border:none;
+  }
+  
+  td, th {
+    /* border: 1px solid #dddddd; */
+    text-align: center;
+    padding: 8px;
+  }
+  /* td{
+      text-align: center;
+  } */
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #fdfdfd;
+  }
+
+  #icon{
+ font-size: 18px;
+ color: red;
+ background-color: transparent;
+  }
+
+  .footer{
+      margin-top: 100px;
+  }
+
+
+  #tot_amount{
+      border: none;
+      background-color: transparent;
+      color: white;
+      padding-left: 20px;
+      font-size: 40px;  
+  }
+
+  #add_tot{
+    padding: 10px;
+    background-image: linear-gradient(to right, red , rgb(202, 141, 28));
+    color: white;
+    cursor: pointer;
+    font-style: bold;
+    border-radius: 4px;
+    font-size: 17px;
+    width:100px;
+    outline: none;
+    border: none;
+  }
+  #add_tot1{
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(0, 217, 255) , rgb(28, 83, 202));
+    color: white;
+    cursor: pointer;
+    font-style: bold;
+    border-radius: 4px;
+    font-size: 17px;
+    width:100px;
+    outline: none;
+    border: none;
+  }
+ .edit_btn{
+     /* width:150px; */
+     color:blue;
+     cursor: pointer;
+ }
+ .clricn{     
+     color:red;
+     cursor: pointer;
+ }
