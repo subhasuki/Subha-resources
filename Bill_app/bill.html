@@ -64,7 +64,7 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody id="protbody">
+                    <tbody id="protbody" value=0>
 
                     </tbody>
                 </table>
@@ -75,9 +75,12 @@
                     <input id="add_tot1" onclick="printval('pvalid')" class="addstyle" value="Print" type="button"><br><br>
                           
                     <div style="background-color: #dddddd;width:70%;font-size: 20px;" id="pvalid">
+                        &nbsp;&nbsp;Customer-ID:<span  id="cccode"></span><br><br>
+                        &nbsp;&nbsp;Customer-Name<span  id="ccname"></span><br><br>
                         &nbsp;&nbsp;Net Amount:&nbsp;RS-<span id="val" class="amtsty"></span ><br><br>
                         &nbsp;&nbsp;GST Amount:&nbsp;RS-<span  id="gst-amount" class="amtsty"></span ><br><br>
                         &nbsp;&nbsp;Total-Amount:&nbsp;RS-<span  id="total-amount" class="amtsty"></span ><br>
+                       
                    </div>
                   </div>
                 </div>

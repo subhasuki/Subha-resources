@@ -67,7 +67,7 @@ label.validation-error{
     max-width: 1310px;
     width:100%;
     height: 672px;
-    background-image: url('../Bill_app/img/3.jpg');
+    background-image: url('img/3.jpg');
     background-repeat: no-repeat;
     background-size: cover;   
     display: grid;

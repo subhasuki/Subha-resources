@@ -41,6 +41,14 @@ function insertNewRecord(data) {
     cell6.innerHTML = `<a class='fa fa-pencil-square-o edit_btn' onClick="onEdit(this)"></a>
                        <a class='fa fa-trash-o clricn clricn' onClick="onDelete(this)"></a>`;
 
+    var cid = document.getElementById("ccode").value;
+    // console.log(cid);
+    var custname = document.getElementById("cname").value;
+    // console.log(custname);
+
+    document.getElementById("cccode").innerHTML = cid ;
+    document.getElementById("ccname").innerHTML = custname;
+
     document.getElementById("pcode").value = '';
     document.getElementById("pname").value = '';
     document.getElementById("quan").value = '';
@@ -59,18 +67,19 @@ function resetForm() {
 
 function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
-    document.getElementById("pcode").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("pname").value = selectedRow.cells[0].innerHTML;
-    document.getElementById("quan").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("punit").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("amount").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("pcode").value = selectedRow.cells[0].innerHTML;
+    document.getElementById("pname").value = selectedRow.cells[1].innerHTML;
+    document.getElementById("quan").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("punit").value = selectedRow.cells[3].innerHTML;
+    document.getElementById("amount").value = selectedRow.cells[4].innerHTML;
 }
+
 function updateRecord(formData) {
-    selectedRow.cells[1].innerHTML = formData.pcode;
-    selectedRow.cells[0].innerHTML = formData.pname;
-    selectedRow.cells[1].innerHTML = formData.quan;
-    selectedRow.cells[1].innerHTML = formData.punit;
-    selectedRow.cells[2].innerHTML = formData.amount;
+    selectedRow.cells[0].innerHTML = formData.pcode;
+    selectedRow.cells[1].innerHTML = formData.pname;
+    selectedRow.cells[2].innerHTML = formData.quan;
+    selectedRow.cells[3].innerHTML = formData.punit;
+    selectedRow.cells[4].innerHTML = formData.amount;
 }
 
 function onDelete(td) {
@@ -80,6 +89,7 @@ function onDelete(td) {
         resetForm();
     }
 }
+
 function validate() {
     isValid = true;
     if (document.getElementById("pname").value == "") {
@@ -92,7 +102,6 @@ function validate() {
     }
     return isValid;
 }
-
 
 function pointfun(evt)
 {
@@ -107,13 +116,10 @@ function pointfun(evt)
 // -------------   Amount Calculation  --------------------------
 
 function mulqun(){
-    var qun = document.getElementById("quan").value;
- //    console.log(qun);
-    var unitprc = document.getElementById("punit").value;
- //    console.log(unitprc);
-    var total = qun * unitprc;
-    var n = total.toFixed(2);
- //    console.log(total);
+    var qun = document.getElementById("quan").value; //    console.log(qun);
+    var unitprc = document.getElementById("punit").value; //    console.log(unitprc);
+    var total = qun * unitprc; 
+    var n = total.toFixed(2);  //    console.log(total);
      document.getElementById("amount").value=n;
 
 }
@@ -132,6 +138,14 @@ function ValidateAlpha(evt)
 }
 
 function totbtn()  {
+ 
+    var tbl = document.getElementById("protbody").rows.length;
+     if (tbl == ""){
+         alert("Empty Row");
+         return false;
+     }
+
+    //----------- Total Amount And GST calculation ----------------
 
     var table = document.getElementById("productList"), sumVal = 0;
             
@@ -140,29 +154,30 @@ function totbtn()  {
         sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
     }
     
-    document.getElementById("val").innerHTML =  sumVal;
-    // console.log(sumVal);
+    document.getElementById("val").innerHTML =  sumVal; // console.log(sumVal);
 
-    // var GSTRate ="12%";
+    const gstAmount = document.getElementById('gst-amount').innerHTML = (sumVal / 100 * 12).toFixed(2); // console.log(gstAmount);
 
-    const gstAmount = document.getElementById('gst-amount').innerHTML = (sumVal / 100 * 12).toFixed(2);
-    // console.log(gstAmount);
+    const totamt = document.getElementById('total-amount').innerHTML = parseInt(sumVal) + parseInt(gstAmount); // console.log(totamt);
 
-    const totamt = document.getElementById('total-amount').innerHTML = parseInt(sumVal) + parseInt(gstAmount);
-    // console.log(totamt);
-
-    var value = parseInt(document.getElementById('ccode').value, 10);
+    var value = parseInt(document.getElementById('ccode').value, 10); 
     value = isNaN(value) ? 0 : value;
     value++;
     document.getElementById('ccode').value = value;
 
-    // document.getElementById('ccode').value='';
     document.getElementById('cname').value='';
     document.getElementById('protbody').innerHTML='';
 
 }
 
 function printval(pvalid) {
+
+    // var prnt = document.getElementById('pvalid').innerHTML === "";
+    // if(prnt == "")
+    // {
+    //     alert("No value in table");
+    //     return false;
+    // }
     
     var printdata = document.getElementById(pvalid).innerHTML;
   
@@ -176,6 +191,8 @@ function printval(pvalid) {
    
     document.body.innerHTML = oldPage;
 
+    document.getElementById('cccode').innerHTML='';
+    document.getElementById('ccname').innerHTML='';
     document.getElementById('val').innerHTML='';
     document.getElementById('gst-amount').innerHTML='';
     document.getElementById('total-amount').innerHTML='';
