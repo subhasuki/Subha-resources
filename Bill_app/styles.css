@@ -194,3 +194,17 @@ table {
      color:red;
      cursor: pointer;
  }
+ #pvalid{
+    margin-top: 100px;
+}
+.fintol{
+    color: white;
+    margin-left: 250px;
+    margin-top: 250px;
+}
+.amtsty{
+   color:white;
+}
+.bigfnt{
+   font-size: 30px;
+}
