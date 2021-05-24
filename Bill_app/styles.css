@@ -220,6 +220,10 @@ label{
   }
   h1{
       text-align: center;
+      text-transform: uppercase;
+      background: linear-gradient(to right, #ff004c 0%, #00e1ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
 
   #add_tot{
