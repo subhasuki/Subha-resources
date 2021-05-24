@@ -1,28 +1,111 @@
-body{
-    overflow: hidden;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border:0px;
+    vertical-align: baseline;
 }
-body > table{
-    width: 80%;
+/* body{
+    overflow: hidden;
+} */
+/* body > table{
+    width: 100%;
   
+} */
+.tbl-form{
+    grid-area: tbl-form;
+    width: 100%;
 }
 
 table{
+    width:100%;
+    font-family: arial, sans-serif;
     border-collapse: collapse;
+    margin-top: 40px;
+    border:none;
 }
 table.list{
     width:100%;
 }
+thead, tbody { 
+    width:100%;
+}
 
+tbody {
+    height: 250px;      
+    overflow-y: auto;   
+}
+tr { width:100%; }
 td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
+    /* border: 1px solid #dddddd; */
+    text-align: center;
     padding: 8px;
 }
-tr:nth-child(even),table.list thead>tr {
-    background-color: #dddddd;
-}
 
-input[type=text], input[type=number] {
+  td{
+      text-align: center;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #fdfdfd;
+  }
+  .table-scroll{
+    display: block;
+    empty-cells: show;
+    border-spacing: 0;
+    border: 1px solid #c49b16;
+  }
+  
+  .table-scroll thead{
+    background-color: #f1f1f1;  
+    position:relative;
+    display: block;
+    width:100%;
+    overflow-y: scroll;
+  }
+  
+  .table-scroll tbody{
+  
+    display: block; position:relative;
+    width:100%; overflow-y:scroll;
+   
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  
+  .table-scroll tr{
+    width: 100%;
+    display:flex;
+  }
+  
+  .table-scroll td,.table-scroll th{
+    flex-basis:100%;
+    flex-grow:2;
+    display: block;
+    padding: 1rem;
+    text-align:center;
+  }
+
+  
+  .table-scroll.small-first-col td:first-child,
+  .table-scroll.small-first-col th:first-child{
+    flex-basis:130%;
+    flex-grow:1;
+  }
+  
+  .table-scroll tbody tr:nth-child(2n){
+    background-color: rgba(130,130,170,0.1);
+  }
+  
+  .body-half-screen{
+    max-height: 250vh;
+  }
+  
+  .small-col{flex-basis:10%;}
+
+input[type=text], input[type=number],input[type=list]{
     width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -31,7 +114,15 @@ input[type=text], input[type=number] {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
+#pname{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 input[type=submit]{
     width: 30%;
     background-color: #ddd;
@@ -67,7 +158,7 @@ label.validation-error{
     max-width: 1310px;
     width:100%;
     height: 672px;
-    background-image: url('img/3.jpg');
+    background-image: url('img/15.jpeg');
     background-repeat: no-repeat;
     background-size: cover;   
     display: grid;
@@ -88,10 +179,6 @@ label{
     /* padding:20px; */
     margin-right: 20px;
 }
-
-
-
-
 .bline{
     border-bottom: 1px solid gray;
 }
@@ -113,43 +200,14 @@ label{
     margin-left: 100px;
     outline: none;
 }
-.tbl-form{
-    grid-area: tbl-form;
-    width: 500px;
-}
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 40px;
-    border:none;
-  }
-  
-  td, th {
-    /* border: 1px solid #dddddd; */
-    text-align: center;
-    padding: 8px;
-  }
-  /* td{
-      text-align: center;
-  } */
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-
-  tr:nth-child(odd) {
-    background-color: #fdfdfd;
-  }
-
   #icon{
- font-size: 18px;
- color: red;
- background-color: transparent;
+    font-size: 18px;
+    color: red;
+    background-color: transparent;
   }
 
   .footer{
-      margin-top: 100px;
+      margin-top: 30px;
   }
 
 
@@ -159,6 +217,9 @@ table {
       color: white;
       padding-left: 20px;
       font-size: 40px;  
+  }
+  h1{
+      text-align: center;
   }
 
   #add_tot{
@@ -175,7 +236,7 @@ table {
   }
   #add_tot1{
     padding: 10px;
-    background-image: linear-gradient(to right, rgb(0, 217, 255) , rgb(28, 83, 202));
+    background-image: linear-gradient(to right, rgb(62, 3, 156), rgb(0, 217, 255));
     color: white;
     cursor: pointer;
     font-style: bold;
@@ -184,6 +245,7 @@ table {
     width:100px;
     outline: none;
     border: none;
+    margin-left: 580px;
   }
  .edit_btn{
      /* width:150px; */
@@ -194,17 +256,18 @@ table {
      color:red;
      cursor: pointer;
  }
- #pvalid{
+ /* #pvalid{
     margin-top: 100px;
-}
+} */
 .fintol{
-    color: white;
-    margin-left: 250px;
-    margin-top: 250px;
+    /* color: white; */
+    margin-left: 150px;
+    font-size: 20px;
+    /* margin-top: 250px; */
 }
-.amtsty{
+/* .amtsty{
    color:white;
-}
+} */
 .bigfnt{
    font-size: 30px;
 }

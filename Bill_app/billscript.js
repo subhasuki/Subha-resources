@@ -41,11 +41,9 @@ function insertNewRecord(data) {
     cell6.innerHTML = `<a class='fa fa-pencil-square-o edit_btn' onClick="onEdit(this)"></a>
                        <a class='fa fa-trash-o clricn clricn' onClick="onDelete(this)"></a>`;
 
-    var cid = document.getElementById("ccode").value;
-    // console.log(cid);
-    var custname = document.getElementById("cname").value;
-    // console.log(custname);
-
+    var cid = document.getElementById("ccode").value; // console.log(cid);
+    var custname = document.getElementById("cname").value;  // console.log(custname);
+    
     document.getElementById("cccode").innerHTML = cid ;
     document.getElementById("ccname").innerHTML = custname;
 
@@ -54,6 +52,36 @@ function insertNewRecord(data) {
     document.getElementById("quan").value = '';
     document.getElementById("punit").value = '';
     document.getElementById("amount").value = '';
+
+    // var tbl = document.getElementById("protbody").rows.length;
+    //  if (tbl == ""){
+    //      alert("Empty Row");
+    //      return false;
+    //  }
+
+    //----------- Total Amount And GST calculation ----------------
+
+    var table = document.getElementById("productList"), sumVal = 0;
+            
+    for(var i = 1; i < table.rows.length; i++)
+    {
+        sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
+    }
+    
+    document.getElementById("val").innerHTML =  sumVal; // console.log(sumVal);
+
+    const gstAmount = document.getElementById('gst-amount').innerHTML = (sumVal / 100 * 12).toFixed(2); // console.log(gstAmount);
+
+    const totamt = document.getElementById('total-amount').innerHTML = parseInt(sumVal) + parseInt(gstAmount); // console.log(totamt);
+
+    var value = parseInt(document.getElementById('ccode').value, 10); 
+    value = isNaN(value) ? 0 : value;
+    value++;
+    
+    // document.getElementById('ccode').value = value;
+
+    // document.getElementById('cname').value='';
+    // document.getElementById('protbody').innerHTML='';
 }
 
 function resetForm() {
@@ -80,13 +108,47 @@ function updateRecord(formData) {
     selectedRow.cells[2].innerHTML = formData.quan;
     selectedRow.cells[3].innerHTML = formData.punit;
     selectedRow.cells[4].innerHTML = formData.amount;
+    var table = document.getElementById("productList"), sumVal = 0;
+            
+    for(var i = 1; i < table.rows.length; i++)
+    {
+        sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
+    }
+    
+    document.getElementById("val").innerHTML =  sumVal; // console.log(sumVal);
+
+    const gstAmount = document.getElementById('gst-amount').innerHTML = (sumVal / 100 * 12).toFixed(2); // console.log(gstAmount);
+
+    const totamt = document.getElementById('total-amount').innerHTML = parseInt(sumVal) + parseInt(gstAmount); // console.log(totamt);
+
+    var value = parseInt(document.getElementById('ccode').value, 10); 
+    value = isNaN(value) ? 0 : value;
+    value++;
 }
 
 function onDelete(td) {
+    
     if (confirm('Are you sure to delete this record ?')) {
         row = td.parentElement.parentElement;
         document.getElementById("productList").deleteRow(row.rowIndex);
         resetForm();
+        var table = document.getElementById("productList"), sumVal = 0;
+            
+    for(var i = 1; i < table.rows.length; i++)
+    {
+        sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
+    }
+    
+    document.getElementById("val").innerHTML =  sumVal; // console.log(sumVal);
+
+    const gstAmount = document.getElementById('gst-amount').innerHTML = (sumVal / 100 * 12).toFixed(2); // console.log(gstAmount);
+
+    const totamt = document.getElementById('total-amount').innerHTML = parseInt(sumVal) + parseInt(gstAmount); // console.log(totamt);
+
+    var value = parseInt(document.getElementById('ccode').value, 10); 
+    value = isNaN(value) ? 0 : value;
+    value++;
+        
     }
 }
 
@@ -137,38 +199,7 @@ function ValidateAlpha(evt)
     return true;
 }
 
-function totbtn()  {
- 
-    var tbl = document.getElementById("protbody").rows.length;
-     if (tbl == ""){
-         alert("Empty Row");
-         return false;
-     }
 
-    //----------- Total Amount And GST calculation ----------------
-
-    var table = document.getElementById("productList"), sumVal = 0;
-            
-    for(var i = 1; i < table.rows.length; i++)
-    {
-        sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
-    }
-    
-    document.getElementById("val").innerHTML =  sumVal; // console.log(sumVal);
-
-    const gstAmount = document.getElementById('gst-amount').innerHTML = (sumVal / 100 * 12).toFixed(2); // console.log(gstAmount);
-
-    const totamt = document.getElementById('total-amount').innerHTML = parseInt(sumVal) + parseInt(gstAmount); // console.log(totamt);
-
-    var value = parseInt(document.getElementById('ccode').value, 10); 
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('ccode').value = value;
-
-    document.getElementById('cname').value='';
-    document.getElementById('protbody').innerHTML='';
-
-}
 
 function printval(pvalid) {
 
