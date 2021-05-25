@@ -1,30 +1,30 @@
-var selectedRow = null
+var selectrow = null
 
 function onFormSubmit() {
     if (validate()) {
-        var formData = readFormData();
-        if (selectedRow == null)
-            insertNewRecord(formData);
+        var fetchdata = getdata();
+        if (selectrow == null)
+            addrow(fetchdata);
         else
-            updateRecord(formData);
+            updateRecord(fetchdata);
         resetForm();
     }
 }
 
 
-function readFormData() {
-    var formData = {};
-    formData["ccode"] = document.getElementById("ccode").value;
-    formData["cname"] = document.getElementById("cname").value;
-    formData["pcode"] = document.getElementById("pcode").value;
-    formData["pname"] = document.getElementById("pname").value;
-    formData["punit"] = document.getElementById("punit").value;
-    formData["quan"] = document.getElementById("quan").value;
-    formData["amount"] = document.getElementById("amount").value;
-    return formData;
+function getdata() {
+    var fetchdata = {};
+    fetchdata["ccode"] = document.getElementById("ccode").value;
+    fetchdata["cname"] = document.getElementById("cname").value;
+    fetchdata["pcode"] = document.getElementById("pcode").value;
+    fetchdata["pname"] = document.getElementById("pname").value;
+    fetchdata["punit"] = document.getElementById("punit").value;
+    fetchdata["quan"] = document.getElementById("quan").value;
+    fetchdata["amount"] = document.getElementById("amount").value;
+    return fetchdata;
 }
 
-function insertNewRecord(data) {
+function addrow(data) {
     var table = document.getElementById("productList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
     cell1 = newRow.insertCell(0);
@@ -43,45 +43,21 @@ function insertNewRecord(data) {
 
     var cid = document.getElementById("ccode").value; // console.log(cid);
     var custname = document.getElementById("cname").value;  // console.log(custname);
+
+    // var table = document.getElementById('protbody').rows(0).length;
+    // document.getElementById("rowscount").innerHTML = table;
     
     document.getElementById("cccode").innerHTML = cid ;
     document.getElementById("ccname").innerHTML = custname;
 
+    // document.getElementById('cname').value='';
     document.getElementById("pcode").value = '';
     document.getElementById("pname").value = '';
     document.getElementById("quan").value = '';
     document.getElementById("punit").value = '';
     document.getElementById("amount").value = '';
-
-    // var tbl = document.getElementById("protbody").rows.length;
-    //  if (tbl == ""){
-    //      alert("Empty Row");
-    //      return false;
-    //  }
-
-    //----------- Total Amount And GST calculation ----------------
-
-    var table = document.getElementById("productList"), sumVal = 0;
-            
-    for(var i = 1; i < table.rows.length; i++)
-    {
-        sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
-    }
-    
-    document.getElementById("val").innerHTML =  sumVal; // console.log(sumVal);
-
-    const gstAmount = document.getElementById('gst-amount').innerHTML = (sumVal / 100 * 12).toFixed(2); // console.log(gstAmount);
-
-    const totamt = document.getElementById('total-amount').innerHTML = parseInt(sumVal) + parseInt(gstAmount); // console.log(totamt);
-
-    var value = parseInt(document.getElementById('ccode').value, 10); 
-    value = isNaN(value) ? 0 : value;
-    value++;
-    
-    // document.getElementById('ccode').value = value;
-
-    // document.getElementById('cname').value='';
-    // document.getElementById('protbody').innerHTML='';
+    totamut();
+       
 }
 
 function resetForm() {
@@ -90,40 +66,25 @@ function resetForm() {
     document.getElementById("quan").value = "";
     document.getElementById("punit").value = "";
     document.getElementById("amount").value = "";
-    selectedRow = null;
+    selectrow = null;
 }
 
 function onEdit(td) {
-    selectedRow = td.parentElement.parentElement;
-    document.getElementById("pcode").value = selectedRow.cells[0].innerHTML;
-    document.getElementById("pname").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("quan").value = selectedRow.cells[2].innerHTML;
-    document.getElementById("punit").value = selectedRow.cells[3].innerHTML;
-    document.getElementById("amount").value = selectedRow.cells[4].innerHTML;
+    selectrow = td.parentElement.parentElement;
+    document.getElementById("pcode").value = selectrow.cells[0].innerHTML;
+    document.getElementById("pname").value = selectrow.cells[1].innerHTML;
+    document.getElementById("quan").value = selectrow.cells[2].innerHTML;
+    document.getElementById("punit").value = selectrow.cells[3].innerHTML;
+    document.getElementById("amount").value = selectrow.cells[4].innerHTML;
 }
 
-function updateRecord(formData) {
-    selectedRow.cells[0].innerHTML = formData.pcode;
-    selectedRow.cells[1].innerHTML = formData.pname;
-    selectedRow.cells[2].innerHTML = formData.quan;
-    selectedRow.cells[3].innerHTML = formData.punit;
-    selectedRow.cells[4].innerHTML = formData.amount;
-    var table = document.getElementById("productList"), sumVal = 0;
-            
-    for(var i = 1; i < table.rows.length; i++)
-    {
-        sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
-    }
-    
-    document.getElementById("val").innerHTML =  sumVal; // console.log(sumVal);
-
-    const gstAmount = document.getElementById('gst-amount').innerHTML = (sumVal / 100 * 12).toFixed(2); // console.log(gstAmount);
-
-    const totamt = document.getElementById('total-amount').innerHTML = parseInt(sumVal) + parseInt(gstAmount); // console.log(totamt);
-
-    var value = parseInt(document.getElementById('ccode').value, 10); 
-    value = isNaN(value) ? 0 : value;
-    value++;
+function updateRecord(fetchdata) {
+    selectrow.cells[0].innerHTML = fetchdata.pcode;
+    selectrow.cells[1].innerHTML = fetchdata.pname;
+    selectrow.cells[2].innerHTML = fetchdata.quan;
+    selectrow.cells[3].innerHTML = fetchdata.punit;
+    selectrow.cells[4].innerHTML = fetchdata.amount;
+    totamut();    
 }
 
 function onDelete(td) {
@@ -131,23 +92,8 @@ function onDelete(td) {
     if (confirm('Are you sure to delete this record ?')) {
         row = td.parentElement.parentElement;
         document.getElementById("productList").deleteRow(row.rowIndex);
-        resetForm();
-        var table = document.getElementById("productList"), sumVal = 0;
-            
-    for(var i = 1; i < table.rows.length; i++)
-    {
-        sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
-    }
-    
-    document.getElementById("val").innerHTML =  sumVal; // console.log(sumVal);
-
-    const gstAmount = document.getElementById('gst-amount').innerHTML = (sumVal / 100 * 12).toFixed(2); // console.log(gstAmount);
-
-    const totamt = document.getElementById('total-amount').innerHTML = parseInt(sumVal) + parseInt(gstAmount); // console.log(totamt);
-
-    var value = parseInt(document.getElementById('ccode').value, 10); 
-    value = isNaN(value) ? 0 : value;
-    value++;
+        resetForm();  
+        totamut();  
         
     }
 }
@@ -167,9 +113,9 @@ function validate() {
 
 function pointfun(evt)
 {
-   var charCode = (evt.which) ? evt.which : evt.keyCode;
-   if (charCode != 46 && charCode > 31 
-     && (charCode < 48 || charCode > 57))
+   var char1 = (evt.char2) ? evt.char2 : evt.keyCode;
+   if (char1 != 46 && char1 > 31 
+     && (char1 < 48 || char1 > 57))
       return false;
 
    return true;
@@ -186,14 +132,25 @@ function mulqun(){
 
 }
 
-function mulunit(){
- mulqun();
+function totamut(){
+    var table = document.getElementById("productList"), sumVal = 0;
+            
+    for(var i = 1; i < table.rows.length; i++)
+    {
+        sumVal = sumVal + parseInt(table.rows[i].cells[4].innerHTML);
+    }
+    
+    document.getElementById("val").innerHTML = sumVal; // console.log(sumVal);
+
+    const gstAmount = document.getElementById('gst-amount').innerHTML = (sumVal / 100 * 12).toFixed(2); // console.log(gstAmount);
+
+    const totamt = document.getElementById('total-amount').innerHTML = parseInt(sumVal) + parseInt(gstAmount); // console.log(totamt);
 }
 
-function ValidateAlpha(evt)
+function numvalidate(evt)
 {
-    var keyCode = (evt.which) ? evt.which : evt.keyCode
-    if ((keyCode < 65 || keyCode > 90) && (keyCode < 97 || keyCode > 123) && keyCode != 32)
+    var numcode1 = (evt.which) ? evt.which : evt.numcode1
+    if ((numcode1 < 65 || numcode1 > 90) && (numcode1 < 97 || numcode1 > 123) && numcode1 != 32)
                 
     return false;
     return true;
@@ -201,31 +158,32 @@ function ValidateAlpha(evt)
 
 
 
-function printval(pvalid) {
+function printval() {
 
-    // var prnt = document.getElementById('pvalid').innerHTML === "";
-    // if(prnt == "")
-    // {
-    //     alert("No value in table");
-    //     return false;
-    // }
+    var tbl = document.getElementById("protbody").rows.length;
+     if (tbl == ""){
+         alert("Empty Row");
+         return false;
+     }
+
+     var divToPrint=document.getElementById("totlist");
+    newWin= window.open("");
+    newWin.document.write(divToPrint.outerHTML);
+    newWin.print();
+    newWin.close();
     
-    var printdata = document.getElementById(pvalid).innerHTML;
-  
-    var oldPage = document.body.innerHTML;
-   
-    document.body.innerHTML = 
-      "<html><head><title></title></head><body>" + 
-      printdata + "</body>";
-   
-    window.print();
-   
-    document.body.innerHTML = oldPage;
-
     document.getElementById('cccode').innerHTML='';
     document.getElementById('ccname').innerHTML='';
+    document.getElementById('cname').value='';
     document.getElementById('val').innerHTML='';
+    // document.getElementById('rowscount').innerHTML='';
     document.getElementById('gst-amount').innerHTML='';
     document.getElementById('total-amount').innerHTML='';
+    document.getElementById('protbody').innerHTML='';
+
+    var value = parseInt(document.getElementById('ccode').value, 10); 
+    value = isNaN(value) ? 1 : value;
+    value++;
+    document.getElementById('ccode').value = value;
 
 }
