@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+    <link rel="stylesheet" href="CSS/Expense.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>   
+ 
+       
+        <div class="container">
+         
+        <!-----------Header ---------->
+
+         <div class="header">
+
+             <div class="logo">    
+                 
+                 <div class="dropdown" style="padding:10px 0 5px 1px">
+                <span class="material-icons" id="menuicon">menu</span>
+                <div class="dropdown-content">
+
+              
+                    <div style="padding:10px 0 5px 15px">
+
+                    <a href="#" class="nav-list1"><span class="material-icons smlicon" id="smlicon">
+                        home</span>&nbsp;&nbsp;&nbsp;Home</a>
+
+                    </div>    
+                        
+                    <div style="padding:10px 15px 0 15px;">
+
+                    <a href="#" class="nav-list2"><span class="material-icons smlicon" id="smlicon">
+                        card_travel</span>&nbsp;&nbsp;&nbsp;Trips</a>
+
+                    <a href="#" class="nav-list3"><span class="material-icons smlicon" id="smlicon">
+                        folder_open</span>&nbsp;&nbsp;&nbsp;Expense</a>
+
+                    <a href="#" class="nav-list4"><span class="material-icons smlicon" id="smlicon">
+                        folder_open</span>&nbsp;&nbsp;&nbsp;Reports</a>
+
+                    <a href="#" class="nav-list5"><span class="material-icons smlicon" id="smlicon">
+                        next_plan</span>&nbsp;&nbsp;&nbsp;Adavances</a>
+
+                    <a href="#" class="nav-list6"><span class="material-icons smlicon" id="smlicon">
+                        credit_card</span>&nbsp;&nbsp;&nbsp;Cards</a>
+
+                    </div>
+                    
+                    <div style="padding:10px 0 5px 15px">
+
+                    <a href="#" class="nav-list7" style="color: #3FB375;"><span class="material-icons smlicon" id="smlicon">
+                        task_alt</span>&nbsp;&nbsp;&nbsp;Approvals</a>
+
+                    </div>
+                        
+                    <div style="padding:10px 15px 0 15px;">
+
+                    <a href="#" class="nav-list8"><span class="material-icons smlicon" id="smlicon">
+                        folder_open</span>&nbsp;&nbsp;&nbsp;Travel Policy</a>
+
+                    <a href="#" class="nav-list9"><span class="material-icons smlicon" id="smlicon">
+                        folder_open</span>&nbsp;&nbsp;&nbsp;US Travel Policy</a>
+                        
+                    <a href="#" class="nav-list10"><span class="material-icons smlicon" id="smlicon">
+                        folder_open</span>&nbsp;&nbsp;&nbsp;Travel Guidelines</a>
+
+                    </div>
+
+                    <div style="padding:15px 15px 0 15px;">
+                        
+                    <a href="#" class="nav-list11"><span class="material-icons smlicon" id="smlicon">
+                        av_timer</span>&nbsp;&nbsp;&nbsp;Analytics</a>
+                        
+                    <a href="#" class="nav-list12"><span class="material-icons smlicon" id="smlicon">
+                        settings</span>&nbsp;&nbsp;&nbsp;My Settings</a>
+
+                    </div>
+
+            </div>
+            </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" 
+                class="icon-md align-text-top flex-shrink-0">
+                <path d="M845.6 1007.3c-78.8 0-155.5-28.1-221.6-81.3-6.4-5.1-15.6-4.6-21.3 1.1l-58 58c-29.5 29.4-77.2 29.4-106.7 0l-56-56c-6.2-6.2-16.4-6.3-22.6 0l-56.7 56.6c-28.8 28.8-75.5 28.8-104.3 0-.9-.9-1.8-1.9-2.7-2.9C-19.2 743.6-61.4 395.6 89.9 111.9c31.3-58.7 92.3-95.3 158.8-95.2h556.7c56.3 0 109.5 37.4 149.5 105.2 36.3 61.5 60.7 145.8 68.7 237.4 4.4 49.5-32.2 93.3-81.7 97.6-2.6.2-5.3.4-7.9.4H644.8c.7 16.8 2 33.5 3.8 49.9 0 .4.1.8.1 1.2 3.4 49.7 12.8 98.8 27.9 146.3 14.5 44.8 33.8 86 57.6 122.5 23.3 35.9 50.3 66.3 80.2 90.5s62 41.4 95.5 51.4c22.6 6.7 35.4 30.4 28.8 52.9-4.6 15.4-17.4 27-33.2 29.8-19.8 3.7-39.8 5.5-59.9 5.5zM248.7 76.7c-44.3 0-85 24.4-105.9 63.5C3.3 401.6 42.2 722.3 240.2 942.7c5.1 5.6 13.7 6.1 19.4 1.1.2-.2.4-.3.6-.5l56.6-56.6c29.7-29.6 77.8-29.6 107.5 0l56 56c6 6 15.8 6 21.9 0l58-58c27.4-27.5 71.2-29.9 101.4-5.5 48.9 39.3 104.2 62.3 161.2 67.1-16.2-9.4-31.6-20.1-46.2-31.9-34.8-28.1-66-63.2-92.8-104.5-54.3-83.5-87.1-186.1-95-296.7-3.1-28.6-4.7-57.3-4.7-86 0-106.2 21-206.6 59.2-282.6 13.4-26.6 28.4-49.4 44.8-68l-439.4.1zm396.1 320.6h289.1c16.6 0 30-13.5 30-30.1 0-.9 0-1.8-.1-2.7-7.2-82.9-28.7-158.2-60.5-212.1-28.9-48.8-63.6-75.7-97.9-75.7-18.5 0-37.1 7.7-55.1 22.9-19.3 16.3-37.8 41.2-53.3 72.1-30.5 60.7-48.7 139.9-52.2 225.6z"></path><path d="M434.2 457.3H211.7c-16.6 0-30-13.4-30-30s13.4-30 30-30h222.5c16.6 0 30 13.4 30 30s-13.5 30-30 30zM325.5 607.4H218.1c-16.6 0-30-13.4-30-30s13.4-30 30-30h107.4c16.6 0 30 13.4 30 30s-13.4 30-30 30zM448.2 307.4H238.7c-16.6 0-30-13.4-30-30s13.4-30 30-30h209.5c16.6 0 30 13.4 30 30s-13.5 30-30 30z"></path></svg>
+                <h1>Expense</h1>
+             </div>
+
+             <div class="search-btn"> 
+                 <input type="text" id="search" placeholder="Search Trips Approval" style="color:black">
+                         
+                    <p style="color:#4B5169"><span class="material-icons search-icon" id="search-icon" style="color:#82859B">search</span>
+                    <span class="material-icons search-icon1" id="search-icon1">arrow_drop_down</span></p>
+               
+             </div>
+              
+             <ul id="hlists">
+
+                 <li class="h-list1">
+                    <span class="material-icons" id="h-list1">add_box</span>
+                 </li>
+
+                 <li class="h-list2">
+                    <span class="material-icons">settings</span>
+                 </li>
+
+                 <li class="h-list3">                    
+                        <span class="material-icons notifi">notifications_none</span>
+                        <span class="badge"></span>
+                        <span class="nos">1</span>
+                 </li>
+
+                 <li class="h-list4">
+                     <span class="material-icons">people_alt</span>
+                 </li>
+
+                 <li class="h-list5" style="font-size: small;">Zoho Travel India
+                    <h6 style="font-size: smaller;color:#a07d64;font-style: bold;">My View</h6>
+                 </li>
+
+                 <li class="h-list6" style="font-size: xx-small;">
+                    <span class="material-icons ">arrow_right</span>
+                </li>
+
+                 <li class="h-list7">
+                     <span class="material-icons">face</span>
+                </li>
+
+                 <li class="h-list8">
+                     <span class="material-icons">apps</span>
+                </li>
+
+             </ul>
+
+         </div>
+
+         <!-----------Banner Content ---------->
+
+          <div class="banner-layout">
+
+              <!-----------Navication ---------->
+
+              <div class="nav-bar">
+
+                <ul>
+                    <div style="padding:10px 0 5px 15px">
+
+                    <li class="nav-list1"><span class="material-icons smlicon">
+                        home</span>&nbsp;&nbsp;&nbsp;Home</li>
+
+                    </div>    
+                        
+                    <div style="padding:10px 15px 0 15px;">
+
+                    <li class="nav-list2"><span class="material-icons smlicon">
+                        card_travel</span>&nbsp;&nbsp;&nbsp;Trips</li>
+
+                    <li class="nav-list3"><span class="material-icons smlicon">
+                        folder_open</span>&nbsp;&nbsp;&nbsp;Expense</li>
+
+                    <li class="nav-list4"><span class="material-icons smlicon">
+                        folder_open</span>&nbsp;&nbsp;&nbsp;Reports</li>
+
+                    <li class="nav-list5"><span class="material-icons smlicon">
+                        next_plan</span>&nbsp;&nbsp;&nbsp;Adavances</li>
+
+                    <li class="nav-list6"><span class="material-icons smlicon">
+                        credit_card</span>&nbsp;&nbsp;&nbsp;Cards</li>
+
+                    </div>
+                    
+                    <div style="padding:10px 0 5px 15px">
+
+                    <li class="nav-list7" style="color: #3FB375;"><span class="material-icons smlicon">
+                        task_alt</span>&nbsp;&nbsp;&nbsp;Approvals</li>
+
+                    </div>
+                        
+                    <div style="padding:10px 15px 0 15px;">
+
+                    <li class="nav-list8"><span class="material-icons smlicon">
+                        folder_open</span>&nbsp;&nbsp;&nbsp;Travel Policy</li>
+
+                    <li class="nav-list9"><span class="material-icons smlicon">
+                        folder_open</span>&nbsp;&nbsp;&nbsp;US Travel Policy</li>
+                        
+                    <li class="nav-list10"><span class="material-icons smlicon">
+                        folder_open</span>&nbsp;&nbsp;&nbsp;Travel Guidelines</li>
+
+                    </div>
+
+                    <div style="padding:15px 15px 0 15px;">
+                        
+                    <li class="nav-list11"><span class="material-icons smlicon">
+                        av_timer</span>&nbsp;&nbsp;&nbsp;Analytics</li>
+                        
+                    <li class="nav-list12"><span class="material-icons smlicon">
+                        settings</span>&nbsp;&nbsp;&nbsp;My Settings</li>
+
+                    </div>
+                </ul>
+
+              </div>
+
+              <!-----------Main content---------->
+              <div class="wrapper">
+          
+              <div class="main-content">
+
+                <div class="join-header">
+
+                    <div class="historyid ulhid">      
+
+                       <div class="arrows">
+                           <span class="material-icons" style="margin:2px;">keyboard_arrow_left</span>
+                        </div>
+
+                        <p class="h-list7"><span class="material-icons">sentiment_satisfied_alt</span></p>
+
+                        <pre class="preuser">Subha
+<span class="umail">sukivelumsg@gmail.com</span></pre>    
+                    </div>
+
+                  <div class="trip-no">TRIP-10<br><h3 class="pending">PENDING APPROVAL</h3></div>
+
+                </div>      
+
+                  <div class="comments">
+                   <span class="material-icons" id="c-icon">textsms</span>
+                   <p class="candh">Comments & History</p>
+
+                   <button class="cmds2"><span>Approve</span></button>
+
+                    <button  class="cmds3"><span>Reject</span></button>
+
+                    <button class="cmds4"><span class="material-icons" style="font-size: small;font-weight: bolder;">more_horiz</span></button>
+                  </div>
+
+            </div>
+       
+                <!-----------User Details bar ---------->
+
+                  <div class="user-detail">
+
+                      <div class="user-display">
+                          <div><h1>Tenkasi</h1>
+                          <p id="duration" style="color:#A8A5BF;">Duration:11 Apr 2021-17 Apr 2021</p></div>
+
+                           <div class="train">
+                            <div>
+                            <span class="material-icons" style="font-size: large;">
+                            directions_subway</span><span class="trn">TRAIN</span></div>
+                           </div><br><br>
+
+                            <div class="par-1">
+
+                                <div class="child-1">
+                                    <p style="color:#6B6D96;font-weight: bolder;" ><span class="material-icons" style="font-size: small;">
+                                    date_range</span>&nbsp; 11 Apr 2021</p><p class="ctt">Train from Chennai to Tenkasi</p>
+                                </div>
+
+                                <div class="departure">
+                                    <p >Departure<br>
+                                    <span class="deptrip">Chennai</span></p>
+                                    <p><span class="material-icons chennaiarw">arrow_forward</span></p>
+
+                                    <p>Arrival<br>
+                                        <span id="depidtrip" >Tenkasi</span></p>
+                                    </div>
+
+                            </div><br><br>
+
+                            <div class="par-1">
+
+                                <div class="child-1">
+                                    <p style="color:#6B6D96;font-weight: bolder;" ><span class="material-icons" style="font-size: small;">
+                                    date_range</span>&nbsp; 17 Apr 2021</p><p class="ttc">Train from Tenkasi  to Chennai</p>
+                                </div>
+
+                                <div class="departure">
+                                    <p >Departure<br>
+                                    <span class="deptrip">Tenkasi</span></p>
+                                    <p><span class="material-icons chennaiarw">arrow_forward</span></p>
+
+                                    <p>Arrival<br>
+                                        <span id="depidtrip">Chennai</span></p>
+                                    </div>
+
+                            </div>
+
+                            
+                      </div> 
+
+                
+
+                      <div class="sidebar">
+
+                        <div class="user-list1">
+                            <h3 style="padding-bottom: 8px;color:#9B9BB0">Current Approver</h3>
+                            <h3 class="a-name"><span class="material-icons" id="u-ic">
+                                account_circle</span><span style="text-align: center;">Shibu Alexis Francis</span></h3>
+                            <p style="color:#5B8FDD;padding-top: 8px;">View approval flow</p>
+                        </div>
+
+                        <div class="user-list2">
+                            <p class="u-l2-c1">Policy</p>
+                            <h2 class="u-l2-c2">Zoho Travel India</h2>
+
+                            <p class="u-l2-c3">Destination</p>
+                            <h2 class="u-l2-c4">Tenkasi</h2>
+                        </div>
+
+                        <div class="user-list3">
+                            <p class="u-l3-c1">Business Purpose</p>
+                            <p class="u-l3-c2">Team Meeting Damodharan J,Age-28 Raghul Kumar,Age-25 sudhin John,Age-24 Sai Preshanth,Age-25</p>
+
+                        </div>
+
+                        <div class="user-list4">
+                            <p class="u-l2-c1">Purpose of Visit</p>
+                            <h2 class="u-l2-c2">Others</h2>
+
+                            <p class="u-l2-c3">Event Name </p>
+                            <h2 class="u-l2-c4" style="padding-bottom: 30px;">Tenkasi Meeting</h2>
+                        </div>
+
+                        <div class="user-list5">
+                            <p style="padding-bottom: 8px;color:#9B9BB0">Documents
+                            <span class="material-icons" id="addicon">add</span></p>
+                        </div>
+
+                      </div>
+
+                  </div>
+                </div>
+             
+
+          
+          </div>
+
+          <!------------ Footer------------ -->
+
+
+
+        </div>
+  
+</body>
+</html>
