@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JavaScript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+    button{
+        padding:20px;
+        outline: none;
+    }
+</style>
+<body>
+    <button class="btn-1" style="background-color: red;color:white">RED</button>
+    <button class="btn-2" style="background-color: green;color:white">GREEN</button>
+    <button class="btn-3" style="background-color: blue;color:white">BLUE</button>
+    <script>   
+
+
+        $(".btn-1").click(function(){
+            document.querySelector("body").style.backgroundColor = "red";
+        });
+
+        $(".btn-2").click(function(){
+            document.querySelector("body").style.backgroundColor = "green";
+        });
+
+        $(".btn-3").click(function(){
+            document.querySelector("body").style.backgroundColor = "blue";
+        });
+
+    // function btnred(){
+
+    //     document.querySelector("body").style.backgroundColor = "red";
+        
+    //  }
+
+    //   function btngreen(){
+
+    //     document.querySelector("body").style.backgroundColor = "green";
+        
+    //  }
+
+    //   function btnblue(){
+
+    //     document.querySelector("body").style.backgroundColor = "blue";
+        
+    //  }
+
+    </script>
+</body>
+
+</html>

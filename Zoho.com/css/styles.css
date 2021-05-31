@@ -1,0 +1,2112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border:0px;
+    font-size: 100%;
+    font: inherit;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+}
+.container{
+    overflow-y: hidden;
+    
+}
+.outer a{
+
+    position: relative;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    margin:0px auto;
+    padding: 10px;
+    height: 45px;
+    color:black;
+    background-color: #fcefd8;
+}
+.header-wrap{
+    width: 90%;
+}
+.header-wrap a{
+    text-decoration: none;
+    color:black;    
+}
+.header-wrap .logo{
+    height: 54px;
+    width: 106px;
+    margin-top: 20px;
+    margin-left: -50px;
+    display: inline-block;
+    background-image: url("../images/zone-sprite.png");
+}
+.navlist{
+
+    font-weight:200;
+    height: 30px;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 60%;
+    margin:-60px 600px 0 ;
+    position:0 10px;
+}
+.searchbtn{
+    width: 20px;
+    box-sizing: border-box;
+    height: 21px;
+    background-size: auto 100px;
+    cursor: pointer;
+    background-position: -100px 1px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 24px;
+    margin-left: -20px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/header-footer.png");
+}
+.langwrld{
+    width: 17px;
+    box-sizing: border-box;
+    height: 15px;
+    background-size: auto 70px;
+    cursor: pointer;
+    background-position: -83px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 18px;
+    margin-left: 2px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/header-footer.png");
+}
+.bannercontent{
+    position: relative;
+    text-align: center;
+    overflow: hidden;    
+}
+h1{
+    font-size: 40px;
+    margin-top: 90px;
+    font-weight: 900;
+    letter-spacing: 2px; 
+    line-height: 1.8;
+}
+.bannerp{
+    line-height: 1.8;
+    font-weight: 900;
+    font-size: 19px;
+    letter-spacing: 1px; 
+}
+.bannercontent h3{
+    font-weight: lighter;
+    margin-top: 90px;   
+    font-size: 10px;
+    letter-spacing: 2px; 
+}
+/*------------------------------CRM----------------------------------- */
+.crmbanner{
+    display: grid;
+    width:100%;
+    height:400px;
+    /* margin-left: 80px; */
+    /* border:1px solid bundlecls#e9f4ff; */
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
+    grid-template-areas: "platform fapp fapp2"
+                         "platform fapp3 fapp4";
+}
+
+.featureapp{
+    grid-area: fapp;
+}
+.featureapp2 {
+    grid-area: fapp2;
+}
+.featureapp3 {
+    grid-area: fapp3;
+}
+.featureapp4 {
+    grid-area: fapp4;
+}
+.crmplatform{
+    grid-area: platform;
+    display: flex;
+    border:1px solid #d8d8d8 ;
+    background-color: red; 
+    background-image: linear-gradient(to right, #e9f4ff , #fff);
+    border: 1px solid #f8f8f8;   
+}
+
+.crmlogo{
+    width: 77px;
+    box-sizing: border-box;
+    height: 160px;
+    /* text-align: center; */
+    background-size: auto 100px;
+    cursor: pointer;
+    background-position: -876px 85px;
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 70px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/logonew.png");
+}
+.ccp{
+     flex-grow: 2;
+     justify-content: center;
+     align-content: center;   
+     margin-left: 30px;  
+ }
+.crmpos{
+    margin-left: -60px;
+    font-weight: bold;
+    margin-top: -42px;
+    letter-spacing: 1px;
+}
+.ccp h3{
+    font-size: 25px;
+    line-height: 55px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.ccp p{
+    font-size:15px;
+    line-height: 25px;
+}
+.crmplatform button{
+    width:140px;
+    height: 30px;
+    color:white;
+    background-color: red;
+    font-weight: bold;
+}
+
+.featureapp{
+    display: flex;
+}
+.card1-child1 .card1-child2{
+    flex-grow: 1;
+    flex-wrap: nowrap;    
+}
+.card1-child1 {
+    width: 70px;
+    box-sizing: border-box;
+    height: 89px;
+    background-size: auto 102px;
+    cursor: pointer;
+    background-position: -965px 24px;
+    /* display: inline-block; */
+    flex-grow: 1;
+    margin-left: 8px;
+    margin-top: 20px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/logonew.png");
+}
+.card1-child2 h2{
+    font-size:20px;
+    line-height: 25px;
+}
+
+.card1-child2 p{
+    font-size:11px;
+    font-weight:lighter;
+    line-height: 20px;
+}
+.card1-child2{
+    margin-top: 50px;
+    margin-left: 20px;
+    border-top: none;
+}
+#btn-2{
+    
+    color:#75d0fc;
+    background-color: white;
+    padding: 8px;
+    border:1px soild #75d0fc;   
+
+}
+
+.featureapp2{
+    display: flex;
+}
+.card2-child1 .card2-child2{
+    flex-grow: 1;
+    flex-wrap: nowrap;    
+}
+.card2-child1 {
+    width: 89px;
+    box-sizing: border-box;
+    height: 89px;
+    background-size: auto 330px;
+    cursor: pointer;
+    background-position: -507px 24px;
+    /* display: inline-block; */
+    flex-grow: 1;
+    margin-left: 22px;
+    margin-top: 20px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.card2-child2 h2{
+    font-size:20px;
+    line-height: 25px;
+}
+
+.card2-child2 p{
+    font-size:11px;
+    font-weight:lighter;
+    line-height: 20px;
+}
+.card2-child2{
+    margin-top: 50px;
+    margin-left: 20px;
+    border-top: none;
+}
+#btn-3{
+    
+    color:#75d0fc;
+    background-color: white;
+    padding: 8px;
+    border:1px soild #75d0fc;   
+
+}
+
+.featureapp3{
+    display: flex;
+}
+.card3-child1 .card3-child2{
+    flex-grow: 1;
+    flex-wrap: nowrap;    
+}
+.card3-child1 {
+    width: 78px;
+    box-sizing: border-box;
+    height: 73px;
+    background-size: auto 330px;
+    cursor: pointer;
+    background-position: -219px -184px;
+    /* display: inline-block; */
+    flex-grow: 1;
+    margin-left: 22px;
+    margin-top: 45px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.card3-child2 h2{
+    font-size:20px;
+    line-height: 25px;
+}
+
+.card3-child2 p{
+    font-size:11px;
+    font-weight:lighter;
+    line-height: 20px;
+}
+.card3-child2{
+    margin-top: 50px;
+    margin-left: 20px;
+    border-top: none;
+}
+#btn-2{
+    
+    color:#75d0fc;
+    background-color: white;
+    padding: 8px;
+    border:1px soild #75d0fc;   
+
+}
+
+.featureapp4{
+    display: flex;
+}
+.card4-child1 .card4-child2{
+    flex-grow: 1;
+    flex-wrap: nowrap;    
+}
+.card4-child1 {
+    width: 78px;
+    box-sizing: border-box;
+    height: 73px;
+    background-size: auto 330px;
+    cursor: pointer;
+    background-position: -69px 4px;
+    /* display: inline-block; */
+    flex-grow: 1;
+    margin-left: 22px;
+    margin-top: 45px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.card4-child2 h2{
+    font-size:20px;
+    line-height: 25px;   
+}
+
+.card4-child2 p{
+    font-size:11px;
+    font-weight:lighter;
+    line-height: 20px;
+}
+.card4-child2{
+    margin-top: 50px;
+    margin-left: 20px;
+    border-top: none;
+}
+#btn-4{
+    
+    color:#75d0fc;
+    background-color: white;
+    padding: 8px;
+    border:1px soild #75d0fc;   
+
+}
+
+
+/* ---------------------------work remotly tool---------------------- */
+.homeofclogo{
+    width: 77px;
+    box-sizing: border-box;
+    height: 160px;
+    /* text-align: center; */
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -852px 87px;
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 70px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.remoteplatform{
+    grid-area: platform;
+    display: flex;
+    /* border:1px solid #f5f5f5 ; */
+    background-color: red; 
+    background-image: linear-gradient(to right, #ffeded , #fff);
+    border: 1px solid #f8f8f8;   
+}
+.remoteplatform button{
+    width:140px;
+    height: 30px;
+    color:white;
+    background-color: red;
+    font-weight: bold;
+}
+#hfc{
+    font-size:17px;
+    line-height: 28px;
+    font-weight: lighter;
+}
+.hf-card1-child1 {
+    width: 70px;
+    box-sizing: border-box;
+    height: 71px;
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -73px -178px;
+    /* display: inline-block; */
+    flex-grow: 1;
+    margin-left: 22px;
+    margin-top: 44px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.hf-card2-child1{
+    width: 70px;
+    box-sizing: border-box;
+    height: 113px;
+    /* text-align: center; */
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -925px 48px;
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 10px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.hf-card3-child1{
+    width: 70px;
+    box-sizing: border-box;
+    height: 71px;
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -143px -178px;
+    /* display: inline-block; */
+    flex-grow: 1;
+    margin-left: 22px;
+    margin-top: 44px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.hf-card4-child1{
+    width: 70px;
+    box-sizing: border-box;
+    height: 113px;
+    /* text-align: center; */
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -997px 48px;
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 10px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+
+
+
+/* ------------------------------Bundles---------------------------- */
+.bundlediv{
+    position: relative;
+    border-top:1px soild gray;
+    height: auto;
+    padding-bottom:41px ;
+}
+.bundlecls{
+    /* position: absolute; */
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 14px;
+    z-index: -1;
+}
+.card3-wrapper{
+    border:1px soild #f5f5f5;
+    /* margin-left: 180px; */
+ 
+}
+.build-card{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    width:100%;
+    height:200px;
+    grid-template-areas: "build-child1 build-child2";
+    border: 1px soild #f5f5f5;
+}
+.build-child1{
+    grid-area: build-child1;
+    width: 70px;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+    height: 113px;
+    /* text-align: center; */
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -927px -167px;
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 0px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.build-child1 p{
+    margin-top: 100px;
+    font-size: 24px;
+    width:110px;
+    justify-self: center;
+    align-self: center;
+    font-weight: 550;
+    color:rgb(54, 53, 53);
+    margin-left: -15px;
+}
+.build-child2{
+    grid-area: build-child2;
+    justify-self: center;
+    align-self: center;
+    line-height: 27px;
+    margin-top: 5px;
+    margin-left: 25px;
+    /* letter-spacing: 1px; */
+}
+.card-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width:100%;
+    border:1px soild red;
+    height:500px;
+    grid-template-areas: "cicon1 cicon2 cicon3 cicon4"
+                         "cicon5 cicon6 cicon7  .";
+}
+.cicons1{
+    grid-area: cicon1;
+    width: 70px;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+    height: 85px;
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -572px -167px;
+    display: inline-block;
+    margin-left: -159px;
+    margin-top: -120px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.cicons1  h2{
+  margin-top: 100px;
+  font-size: 20px;
+  width:120px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+.cicons1  p{
+    /* margin-top: 100px; */
+    font-size: 15px;
+    width:250px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 27px;
+  }
+.cicons2{
+    grid-area: cicon2;
+    width: 70px;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+    height: 85px;
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -641px -167px;
+    display: inline-block;
+    margin-left: -159px;
+    margin-top: -120px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.cicons2 h2{
+    margin-top: 100px;
+    font-size: 20px;
+    width:120px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 27px;
+  }
+  .cicons2 p{
+      /* margin-top: 100px; */
+      font-size: 15px;
+      width:250px;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      line-height: 27px;
+    }
+.cicons3{
+    grid-area: cicon3;
+    width: 70px;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+    height: 85px;
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -712px -167px;
+    display: inline-block;
+    margin-left: -159px;
+    margin-top: -120px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.cicons3 h2{
+    margin-top: 100px;
+    font-size: 20px;
+    width:180px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 27px;
+  }
+  .cicons3 p{
+      /* margin-top: 100px; */
+      font-size: 15px;
+      width:250px;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      line-height: 27px;
+    }
+.cicons4{
+    grid-area: cicon4;
+    width: 70px;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+    height: 71px;
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -74px -247px;
+    display: inline-block;
+    margin-left: -159px;
+    margin-top: -120px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.cicons4 h2{
+    margin-top: 100px;
+    font-size: 20px;
+    width:180px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 27px;
+  }
+  .cicons4 p{
+      /* margin-top: 100px; */
+      font-size: 15px;
+      width:238px;
+      font-weight: lighter;
+      letter-spacing: 0.5px;
+      line-height: 27px;
+    }
+.cicons5{
+    grid-area: cicon5;
+    width: 70px;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+    height: 85px;
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -854px -167px;
+    display: inline-block;
+    margin-left: -159px;
+    margin-top: -120px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.cicons5 h2{
+    margin-top: 100px;
+    font-size: 20px;
+    width:120px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 27px;
+  }
+  .cicons5 p{
+      /* margin-top: 100px; */
+      font-size: 15px;
+      width:250px;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      line-height: 27px;
+    }
+.cicons6{
+    grid-area: cicon6;
+    width: 70px;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+    height: 85px;
+    background-size: auto 320px;
+    cursor: pointer;
+    background-position: -785px -164px;
+    display: inline-block;
+    margin-left: -159px;
+    margin-top: -120px;
+    background-repeat: no-repeat;    
+    background-image: url("../images/zp-icon.png");
+}
+.cicons6 h2{
+    margin-top: 100px;
+    font-size: 20px;
+    width:200px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 27px;
+  }
+  .cicons6 p{
+      /* margin-top: 100px; */
+      font-size: 15px;
+      width:300px;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      line-height: 27px;
+    }
+    .cicons7{
+        grid-area: cicon7;
+        justify-self: center;
+        align-self: center;
+        /* content: ''; */
+        display: inline-block;
+        /* position: absolute; */
+        left: 20px;
+        margin-left: -113px;
+        margin-top: -120px;
+        top: 0;
+        width: 63px;
+        height: 66px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: auto 66px;    
+        box-sizing: border-box;
+        background-image: url("../images/zh-sprite-2x-new.png");
+    }
+    
+    .cicons7 h2{
+        margin-top: 90px;
+        font-size: 20px;
+        width:200px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        line-height: 27px;
+      }
+      .cicons7 p{
+          /* margin-top: 100px; */
+          font-size: 15px;
+          width:300px;
+          font-weight: lighter;
+          letter-spacing: 1px;
+          line-height: 27px;
+        }
+/* ------------------------------Bundles End---------------------------- */
+
+/* ------------------------------All Zoho Apps---------------------------- */
+.zohoapps{
+    display:grid;
+    width:100%;
+    height: 1000px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "appgrid appgrid2";
+}
+.appgrid{
+    display: grid;
+    grid-area: appgrid;
+    width:100%;
+    border-right: 1px solid #f5f5f5;
+    height:1000px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "allapps1  allapps1  allapps1  allapps2  allapps2  allapps2"
+                         "allapps3  allapps3  allapps4  allapps5  allapps5  allapps6"
+                         "allapps7  allapps8  allapps9  allapps10 allapps11 allapps12"
+                         "allapps13 allapps14 allapps15 allapps16 allapps17 allapps18"
+                         "allapps19 allapps20 allapps21 allapps22 allapps23 allapps24"
+                         "allapps25 allapps26 allapps27 allapps28 allapps29 allapps30"
+                         "allapps01 .             .     allapps02 allapps03 allapps04"
+                         ".         .             .     allapps05 .           .      ";
+}
+.allapps1{
+    grid-area: allapps1;
+    justify-self: center;
+    align-self: center;
+    /* border-right: 1px solid rgb(218, 218, 218); */
+}
+.allapps1 h3{
+    font-size: 23px;
+    margin-left: 40px;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+    font-weight: bold;
+} 
+.allapps1 p{
+    font-size: 15px;
+    margin-left: 1px;
+    margin-right: 20px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    width:350px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.allapps2{
+    grid-area: allapps2;
+    justify-self: center;
+    align-self: center;
+    /* border-right: 1px solid rgb(218, 218, 218); */
+}
+.allapps2 h3{
+    font-size: 23px;
+    margin-left: 40px;
+    /* margin-top: 12px; */
+    letter-spacing: 1.5px;
+    line-height: 50px;    
+    font-weight: bold;
+} 
+.allapps2 p{
+    font-size: 15px;
+    margin-left: 1px;
+    margin-right: 20px;
+    text-align: center;
+    width:350px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-weight: 100;
+}
+
+
+.allapps3{
+    grid-area: allapps3;
+    background-position: -128px 0;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    width: 64px;
+    height: 64px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+
+
+.allapps4{
+    grid-area: allapps4;
+    background-position: 0 -126px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    margin-right: 25px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps4 .smlnew{
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 10;
+    padding: 2px 5px;
+    background: #fef07d none repeat scroll 0 0;
+    color: #c46b0c;
+    font-size: 9px;
+}
+.allapps4 p{
+    font-size: 10px;
+    margin-top:42px;
+}
+
+
+.allapps5{
+    grid-area: allapps5;
+    background-position:-256px 0;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    width:64px;
+    height: 64px;
+    margin: 0 auto 8px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+
+}
+
+.allapps6{
+    grid-area: allapps6;
+    background-position:-672px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+}
+.allapps7{
+    grid-area: allapps7;
+    background-position:-320px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps8{
+    grid-area: allapps8;
+    background-position:-128px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps9{
+    grid-area: allapps9;
+    background-position:-160px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps10{
+    grid-area: allapps10;
+    background-position:-768px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps11{
+    grid-area: allapps11;
+    background-position:-704px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps12{
+    grid-area: allapps12;
+    background-position:-736px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps13{
+    grid-area: allapps13;
+    background-position:-192px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps14{
+    grid-area: allapps14;
+    background-position:-224px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps15{
+    grid-area: allapps15;
+    background-position:-256px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps16{
+    grid-area: allapps16;
+    background-position:-768px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps17{
+    grid-area: allapps17;
+    background-position:-800px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps18{
+    grid-area: allapps18;
+    background-position:-832px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps19{
+    grid-area: allapps19;
+    background-position:-288px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps20{
+    grid-area: allapps20;
+    background-position:-352px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps21{
+    grid-area: allapps21;
+    background-position:-96px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps22{
+    grid-area: allapps22;
+    background-position:-864px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps23{
+    grid-area: allapps23;
+    background-position:-896px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps24{
+    grid-area: allapps24;
+    background-position:-928px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps25{
+    grid-area: allapps25;
+    background-position:-512px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps26{
+    grid-area: allapps26;
+    background-position:-481px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps27{
+    grid-area: allapps27;
+    background-position:-704px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps28{
+    grid-area: allapps28;
+    background-position:0 -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps29{
+    grid-area: allapps29;
+    background-position:-32px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps30{
+    grid-area: allapps30;
+    background-position:-64px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps01{
+    grid-area: allapps01;
+    background-position:-735px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps02{
+    grid-area: allapps02;
+    background-position:-96px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps03{
+    grid-area: allapps03;
+    background-position:-128px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps04{
+    grid-area: allapps04;
+    background-position:-256px -128px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps05{
+    grid-area: allapps05;
+    background-position:-289px -128px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+
+
+.appgrid2{
+    display: grid;
+    width:100%;
+    grid-area: appgrid2;
+    height:1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "allapps31 allapps31 allapps31"
+                         "allapps32 allapps32 allapps33"
+                         "allapps34 allapps35 allapps36"
+                         "allapps37 allapps38 ."
+                         "allapps39 allapps39 allapps39"
+                         "allapps40 allapps40 allapps41"
+                         "allapps42 allapps43 .";
+}
+
+
+.allapps31{
+    grid-area: allapps31;
+    justify-self: center;
+    align-self: center;
+    /* border-right: 1px solid rgb(218, 218, 218); */
+    margin-left: 40px;
+    margin-top: -12px;
+}
+.allapps31 h3{
+    font-size: 23px;
+    margin-left: 40px;
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    line-height: 50px;    
+    font-weight: bold;
+    text-align: center;
+} 
+.allapps31 p{
+    font-size: 15px;
+    /* margin-left: 1px; */
+    /* margin-right: 20px; */
+    width:317px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.allapps32{
+    grid-area: allapps32;
+    background-position: -64px 0;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    width: 64px;
+    height: 64px;
+    margin-top: -5px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps33{
+    grid-area: allapps33;
+    background-position:-448px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    margin-top: -5px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps34{
+    grid-area: allapps34;
+    background-position:-480px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    margin-top: -13px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps35{
+    grid-area: allapps35;
+    background-position:-512px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps36{
+    grid-area: allapps36;
+    background-position:-544px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps37{
+    grid-area: allapps37;
+    background-position:-576px -64px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps38{
+    grid-area: allapps38;
+    background-position:-672px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps39{
+    grid-area: allapps39;   
+    justify-self: center;
+    align-self: center;
+}
+.allapps39 h3{
+    font-size: 23px;
+    margin-left: 40px;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+    font-weight: bold;
+} 
+.allapps39 p{
+    font-size: 15px;
+    margin-left: 1px;
+    margin-right: 20px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    width:350px;
+    font-weight: lighter;
+}
+.allapps40{
+    grid-area: allapps40;
+    background-position:-384px 0;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 64px;
+    width: 64px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps41{
+    grid-area: allapps41;
+    background-position:-352px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps42{
+    grid-area: allapps42;
+    background-position:-640px -96px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    margin-left: 20px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+.allapps43{
+    grid-area: allapps43;
+    background-position:-160px -127px;
+    background-repeat: no-repeat;
+    background-size: 960px auto;
+    height: 32px;
+    width: 32px;
+    margin-left: 20px;
+    align-self: center;
+    justify-self: center;
+    background-image: url(../images/zp-icon.png);
+}
+
+/*----------------------------------- All zoho apps end-------------------------------- */
+
+/*----------------------------------- Help Desk * Customer Service ----------------------------*/
+
+.customgrid{
+    display: grid;
+    width:100%;
+    /* margin-left: 100px; */
+    height:700px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "customerhelp1  customerhelp1  customerhelp1  customerhelp2  customerhelp2 customerhelp2  customerhelp3  customerhelp3 customerhelp3"
+                         "customerhelp4  customerhelp4  customerhelp5  customerhelp6  customerhelp6 customerhelp7  customerhelp8  customerhelp8 customerhelp9"
+                         "customerhelp10 customerhelp11 customerhelp12 customerhelp13       .           .          customerhelp14 customerhelp15        .    "
+                         "customerhelp16 customerhelp17 customerhelp18 customerhelp19 customerhelp19 customerhelp19     .               .               .    "
+                         "customerhelp20        .              .            .               .           .               .               .               .    "
+                         "      .               .              .       customerhelp21 customerhelp21 customerhelp21     .               .               .    ";
+}
+.customgrid h3{
+    text-align: center;
+}
+.customgrid p{
+    text-align: center;
+}
+.customerhelp1{
+    grid-area:customerhelp1;
+    justify-self: center;
+    align-self: center;
+}
+.customerhelp1 h3{
+    font-size: 23px;
+    /* margin-left: 40px; */
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    line-height: 50px;    
+    font-weight: bold;
+} 
+.customerhelp1 p{
+    font-size: 15px;
+    /* margin-left: 1px; */
+    /* margin-right: 20px; */
+    width:300px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-weight: 100;
+}
+.customerhelp2{
+    grid-area:customerhelp2;
+    justify-self: center;
+    align-self: center;
+    /* margin-left: 150px; */
+}
+.customerhelp2 h3{
+    font-size: 23px;
+    margin-left: 40px;
+    margin-top: 5px;
+    letter-spacing: 1.5px;
+    line-height: 50px;    
+    font-weight: bold;
+} 
+.customerhelp2 p{
+    font-size: 15px;
+    /* margin-left: 1px; */
+    /* margin-right: 20px; */
+    /* width:300px; */
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-weight: 100;
+}
+.customerhelp3{
+    grid-area:customerhelp3;
+}
+.customerhelp4{
+    grid-area:customerhelp4;
+    display: block;
+    background: url(../images/zp-icon.png) left top no-repeat;
+    margin: 0 auto 10px;
+    background-size: 960px auto;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 8px;
+    background-position: -510px 0
+}
+.customgrid label {
+    min-height: 40px;
+    display: inline-block;
+    cursor: pointer;   
+}
+
+.customerhelp5{
+    grid-area:customerhelp5;
+    display: block;
+    background: url(../images/zp-icon.png) left top no-repeat;
+    margin: 0 auto 10px;
+    background-size: 960px auto;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto 8px;
+    background-position: -224px -96px;
+    margin-top: 25px;
+}
+.customerhelp6{
+    grid-area:customerhelp6;
+    background-position:-320px 0;
+    margin-top: 10px;
+}
+.customerhelp7{
+    grid-area:customerhelp7;
+    background-position: -192px -96px;
+    margin-top: 25px;
+}
+.customerhelp8{
+    grid-area:customerhelp8;
+    background-position: -192px 0;
+}
+.customerhelp9{
+    grid-area:customerhelp9;
+    background-position: -416px -96px;
+    margin-top: 25px;
+}
+.customerhelp10{
+    grid-area:customerhelp10;
+    background-position: -256px -96px;
+   margin-top: 60px;
+}
+.customerhelp11{
+    grid-area:customerhelp11;
+    background-position: -576px -96px;
+   margin-top: 60px;
+}
+.customerhelp12{
+    grid-area:customerhelp12;
+    background-position: -65px -127px;
+   margin-top: 60px;
+}
+.customerhelp13{
+    grid-area:customerhelp13;
+    background-position: -32px -127px;
+   margin-top: 60px;
+}
+.customerhelp14{
+    grid-area:customerhelp14;
+    background-position: -544px -96px;
+   margin-top: 60px;
+}
+.customerhelp15{
+    grid-area:customerhelp15;
+    background-position: -609px -96px;
+    margin-top: 60px;
+}
+.customerhelp16{
+    grid-area:customerhelp16;
+    background-position: -288px -96px;
+   margin-top: 100px;
+}
+.customerhelp17{
+    grid-area:customerhelp17;
+    background-position: -832px -96px;
+    margin-top: 100px;
+}
+.customerhelp18{
+    grid-area:customerhelp18;
+    background-position: -864px -96px;
+    margin-top: 100px;
+}
+.customerhelp19{
+    grid-area:customerhelp19;
+    margin-top: 128px;
+}
+.customerhelp20{
+    grid-area:customerhelp20;
+    background-position: -864px -96px;
+    margin-top: -47px;
+}
+.customerhelp21{
+    grid-area:customerhelp21;
+    background-position: -641px 0;
+    margin-top: -53px;
+}
+.gmq-privacy-inner {
+    max-width: 1040px;
+    width: 95%;
+    margin: 80px auto 20px;
+    display: flex;
+}
+.gmq-privacy-inner>a {
+    width: 48%;
+    margin-right: 2%;
+    text-align: center;
+}
+.gmq-container {
+    background: url(../images/gmq-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px 0;
+}
+.testimonial-video-detail {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 10%;
+    z-index: 2;
+}
+.testimonial-video-detail .z-customer-quote {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.testimonial-video-detail p {
+    margin: 0;
+    font-size: 11px;
+    padding-right: 70px;
+}
+.testimonial-video-detail span.play-video-btn {
+    background: #f0483e;
+    font-size: 11px;
+    padding: 3px 10px 3px 25px;
+    text-transform: uppercase;
+    bottom: 5px;
+    position: absolute;
+    right: 0;
+}
+/* a {
+    color: #03a9f5;
+    text-decoration: none;
+} */
+.testimonial-video-detail span.play-video-btn:before {
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    content: "";
+    height: 0;
+    left: 8px;
+    position: absolute;
+    top: 4px;
+    width: 0;
+}
+.gmq-container img {
+    width: 90%;
+}
+.gmq-container p {
+    color: #ffd600;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.gmq-privacy-inner span.zcta {
+    padding: 10px 15px;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 1;
+    border-radius: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.gmq-privacy-inner>a.privacy-container {
+    margin-right: 0;
+    margin-left: 2%;
+    background-image: url(../images/privacy-shield-bg.jpg);
+    background-size: 50%;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.gmq-privacy-inner>a {
+    width: 48%;
+    margin-right: 2%;
+    text-align: center;
+}
+/* a {
+    color: #03a9f5;
+    text-decoration: none;
+} */
+
+
+.offscreen-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.zcustomer-section-part {
+    padding: 80px 0 20px;
+}
+.zcustomer-section-part h2 {
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+h2 {
+    margin-bottom: 15px;
+    font-feature-settings: "liga" 0,"clig" 0;
+    letter-spacing: -0.2px;
+}
+.content-wrap {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 0 40px;
+    overflow: hidden;
+}
+.act-btn, .content-wrap, .main, .watch-btn {
+    position: relative;
+}
+.zcustomer-section-part .content-wrap>div {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.zcustomer-section-part .banner-testimonial-wrap {
+    width: 45%;
+}
+
+/* ul {
+    list-style: none;
+} */
+
+.z-trust-brands-wrap ul li.tb-hyatt span {
+    width: 108px;
+    background-position: -937px 0;
+}
+.z-trust-brands-wrap ul li span {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 1045px auto;
+    height: 40px;
+}
+.z-trust-brands-wrap ul li span {
+    display: inline-block;
+    margin: 0 0 25px 0;
+    text-indent: -9999px;
+}
+.z-trust-brands-wrap ul li.tb-kpmg span {
+    width: 67px;
+    background-position: -144px 0;
+}
+.z-trust-brands-wrap ul li span {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 1045px auto;
+    height: 40px;
+}
+.z-trust-brands-wrap ul li.tb-loreal span {
+    width: 106px;
+    background-position: -431px -40px;
+}
+.z-trust-brands-wrap ul li span {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 1045px auto;
+    height: 40px;
+}
+.z-trust-brands-wrap ul li.tb-mahindra span {
+    width: 122px;
+    background-position: -112px -40px;
+}
+.z-trust-brands-wrap ul li span {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 1045px auto;
+    height: 40px;
+}
+.z-trust-brands-wrap ul li.tb-tata span {
+    width: 133px;
+    background-position: -112px -80px;
+}
+.z-trust-brands-wrap ul li span {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 1045px auto;
+    height: 40px;
+}
+.z-trust-brands-wrap ul li span {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 1045px auto;
+    height: 40px;
+}
+.z-trust-brands-wrap ul li span {
+    display: inline-block;
+    margin: 0 0 25px 0;
+    text-indent: -9999px;
+}
+.z-trust-brands-wrap a.more-detail-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: inline-block;
+    font-family: var(--zf-primary-semibold);
+}
+.zcustomer-section-part .z-trust-brands-wrap {
+    width: 55%;
+    padding: 0 0 0 80px;
+}
+
+.z-trust-brands-wrap ul li {
+    display: inline-block;
+    width: 32%;
+}
+
+.zcustomer-section-part {
+    padding: 80px 0 20px;
+}
+
+.banner-testimonial-wrap a {
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    position: relative;
+}
+a {
+    color: #03a9f5;
+    text-decoration: none;
+}
+
+.bfrgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width:100%;
+    height:210px;
+    grid-template-areas: "bfrfooter1 bfrfooter2 bfrfooter3 bfrfooter4";
+}
+.bfrfooter1{
+    grid-area: bfrfooter1;
+}
+.bfrfooter2{
+    grid-area: bfrfooter2;
+}
+.bfrfooter3{
+    grid-area: bfrfooter3;
+    background-position: -480px -50px;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: auto 120px;
+    background-image: url(../images/logonew.png);
+}
+.bfrfooter4{
+    grid-area: bfrfooter4;
+    background-position: -514px -50px;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: auto 120px;
+    background-image: url(../images/logonew.png);
+}
+
+
+.outerfooter .innerfooter1>div {
+    display: table-cell;
+    padding: 0 40px 0 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 240px;
+}
+.outerfooter{
+    width:100%;
+    height: 800px;
+    background-color:#333;
+}
+.innerfooter{
+    padding: 50px 50px 0 50px;
+    height: auto;
+    width:100%;
+}
+.innerfooter1{
+padding:0 30px 0 30px;
+height: auto;
+width:240px
+}
+.outerfooter .innerfooter1 ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+/*  */
+
+
+.outerfooter .innerfooter1 ul li a {
+    /* color: #333; */
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 0;
+    line-height: 20px;
+    display: inline-block;
+}
+
+
+.common-links {
+    margin-top: 0;
+    position: relative;
+    padding: 19px 0;
+    margin-top: 30px;
+    font-size: 11px;
+    text-align: center;
+}
+.footer-search {
+    margin-top: 0;
+}
+
+.footer-search {
+    margin: 50px auto;
+    position: relative;
+    max-width: 900px;
+    width: 90%;
+}
+.footer-search, .footer-search * {
+    box-sizing: border-box;
+}
+.footer-search * {
+    box-sizing: border-box;
+}
+.footer-search .footer-search-input {
+    border: 1px solid #666;
+    color: #fff;
+}
+
+.footer-search .footer-search-input {
+    background: transparent;
+    padding: 12px 60px 12px 12px;
+    font-size: 15px;
+    float: none;
+    max-width: 100%;
+    margin: 0;
+    height: initial;
+    line-height: initial;
+    border: 1px solid #dfdfdf;
+    text-indent: 0;
+    width: 100%;
+}
+.footer-search, .footer-search * {
+    box-sizing: border-box;
+}
+input {
+    border: 0;
+    border-radius: 0;
+}
+.footer-search .footer-search-btn {
+    border: 1px solid #666;
+    background: #2d2d2d;
+    border-left: 0;
+}
+.footer-search .footer-search-btn {
+    height: 100%;
+    width: 48px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid #dfdfdf;
+    background: #f7f7f7;
+}
+.footer-search, .footer-search * {
+    box-sizing: border-box;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, .slick-dots li button:focus, .slick-dots li button:hover, .slick-list:focus, .slick-next, .slick-prev, a:focus {
+    outline: 0;
+}
+
+button {
+    appearance: auto;
+    /* -webkit-writing-mode: horizontal-tb !important; */
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.footer-search {
+    margin-top: 0;
+}
+.footer-search {
+    margin: 50px auto;
+    position: relative;
+    max-width: 900px;
+    width: 90%;
+}
+.footer-search, .footer-search * {
+    box-sizing: border-box;
+}
+.common-links .ZPprivacy {
+    padding: 0 20px;
+}
+
+.common-links ul {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.common-links p {
+    padding: 0;
+    font-size: 11px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+.zlang-container {
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+}
+.zsocial-share {
+    text-align: center !important;
+    margin-top: 20px;
+}
+.common-links ul {
+    overflow: hidden;
+}
+.footer-search .footer-search-btn span {
+    background-color: transparent;
+    background-position: -111px -15px;
+    vertical-align: middle;
+}
+
+.footer-search .footer-search-btn span {
+    background: #f7f7f7 url(../images/social.png) no-repeat -5px -5px/auto 40px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.common-links ul li:first-child {
+    padding-left: 0;
+}
+
+.common-links ul li {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.ZPprivacy li {
+    line-height: 12px;
+}
+.zlang-container .zlang-text::after {
+    background-position: -258px 0;
+}
+.zlang-container .zlang-text::after {
+    background-image: url(../images/zone-sprite.png);
+    background-size: 400px auto;
+    background-position: -233px 0;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 20px;
+    left: -22px;
+    position: absolute;
+    top: 2px;
+    box-sizing: border-box;
+    width: 20px;
+    z-index: 1;
+}
