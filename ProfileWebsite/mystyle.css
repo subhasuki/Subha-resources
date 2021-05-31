@@ -664,11 +664,18 @@ footer > p{
     }    
 @media only screen and (max-width: 880px){.container{
         width:auto;
+	
      }
+	.main-nav{
+		display:none;
+	}
     }    
 @media only screen and (max-width: 815px){.container{
         width:auto;
      }
+	.main-nav{
+		display:none;
+	}
     }    
 @media only screen and (max-width: 813px){.container{
         width:auto;
@@ -677,6 +684,9 @@ footer > p{
 @media only screen and (max-width: 825px){.container{
         width:auto;
      }
+	.main-nav{
+		display:none;
+	}
     }    
 @media only screen and (max-width: 800px){.container{
         width:auto;
@@ -685,13 +695,22 @@ footer > p{
 @media only screen and (max-width: 697px){.container{
         width:auto;
      }
+	.main-nav{
+		display:none;
+	}
     }    
 @media only screen and (max-width: 620px){.container{
         width:auto;
      }
+	.main-nav{
+		display:none;
+	}
     }    
 @media only screen and (max-width: 600px){.container{
         width:auto;
      }
+	.main-nav{
+		display:none;
+	}
     }    
   
