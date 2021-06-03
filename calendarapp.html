@@ -43,6 +43,9 @@ input[type=text], input[type=number]{
     border-radius: 4px;
     box-sizing: border-box;
 }
+    #opt{
+        font-size:15px;
+    }
 
 </style>
 <body>
@@ -134,7 +137,7 @@ input[type=text], input[type=number]{
         document.getElementById("opt").innerHTML= mm + " " +m + " - " + dayName;
 
        }
-        else{ document.getElementById("opt").innerHTML= mm + " " +m + " - " + dayName;}
+        else{ document.getElementById("opt").innerHTML= mm + " " +m + " - " + dayName + " " +y;}
 
         document.getElementById("fdate").value = '';
         document.getElementById("mth").value = '';
