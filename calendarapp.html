@@ -9,11 +9,10 @@
 <style>
 .container{
     width:600px;
-    height: 400px;
+    height: 430px;
     border-radius: 5px;
     background-color: lightgrey;
     margin: auto;
-    /* padding: 100px; */
     display: flex;
     /* margin-left: -50px; */
 }
@@ -29,7 +28,7 @@ button{
     background-color: rgba(100, 100, 100, 0.877);
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     border: none;
     font-weight: bolder;
     border-radius: 4px;
@@ -43,10 +42,10 @@ input[type=text], input[type=number]{
     border-radius: 4px;
     box-sizing: border-box;
 }
-    #opt{
-        font-size:15px;
-    }
-
+#opt{
+    font-family:cursive;
+    font-size: 20px;
+}
 </style>
 <body>
 
@@ -61,7 +60,7 @@ input[type=text], input[type=number]{
         onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="2"  required/><br><br>
 
         <label for="">Year</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Year"
-        id="fyear"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="4"  required/><br><br>
+        id="fyear"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="4"  required/><br><br><br>
     
         <button>Calc-Day</button>
         <p id="opt"></p>
@@ -74,28 +73,22 @@ input[type=text], input[type=number]{
 
         var d = document.getElementById("fdate").value;// console.log(fetchdate);
 
-        var m = document.getElementById("mth").value - 1; // console.log(fetchdate);
+        var m = document.getElementById("mth").value; // console.log(fetchdate);
         
         var y = document.getElementById("fyear").value;// console.log(fetchdate);
 
-       
-
-        var days = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday", "Friday" , "Saturday"];       
-        // var y = (fetchdate - 1) % 7;
-        // var z = x[y];
-
-               
+                   
         var months = ["January" , "February", "March","April","May","June","July",
                       "August","September","October","November","December"];//  console.log(months);
 
         var nd = [31,28,31,30,31,30,31,31,30,31,30,31];
          
-        // var ffmths = fetmonths - 1; // console.log(ffmths);
+         var ffmths = m - 1; //console.log(ffmths);
         
 
-        var  newm = nd [m]; // console.log(newmth);
+        var  newm = nd [ffmths]; //  console.log(newm);
 
-        if (  (m < 0) || ( m > 11) ) {
+        if (  (ffmths < 0) || ( ffmths > 11) ) {
 
             alert("Please enter correct month");
             return false;
@@ -117,27 +110,37 @@ input[type=text], input[type=number]{
                 return false;
         }
              
-        var dd = m + '/' + d + '/' + y ;  // console.log(dd);
+        var dd = m + '/' + d + '/' + y ;  
+        console.log(dd);
 
         // var findate = dd;
         
-        var d = new Date(dd);
-        var dayName = days[d.getDay()]; // console.log(dayName);
+        var dt = new Date(dd);// console.log(d);
 
-        var mm = months[m]; 
+        var days = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday", "Friday" , "Saturday"];     
+
+        var dayName = days[dt.getDay()]; 
+        console.log(dayName);
+
+        var mm = months[ffmths]; 
         console.log(mm);
+
+        // Var dateString = '05/09/1997';
+        // var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        // var d = new Date(dateString);
+        // var dayName = days[d.getDay()];
 
         if (dayName === "Sunday"){
             var dayName = dayName.fontcolor("red");
-            document.getElementById("opt").innerHTML= mm + " " +m + " - " + dayName;
+            document.getElementById("opt").innerHTML= mm + " " +d + " - " + dayName;
         }
         else if(dayName === "Saturday"){
 
         var dayName = dayName.fontcolor("red");
-        document.getElementById("opt").innerHTML= mm + " " +m + " - " + dayName;
+        document.getElementById("opt").innerHTML= mm + " " +d + " - " + dayName;
 
        }
-        else{ document.getElementById("opt").innerHTML= mm + " " +m + " - " + dayName + " " +y;}
+        else{ document.getElementById("opt").innerHTML= mm + " " +d + " - " + dayName;}
 
         document.getElementById("fdate").value = '';
         document.getElementById("mth").value = '';
