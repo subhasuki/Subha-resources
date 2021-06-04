@@ -9,5 +9,5 @@ function soul(){
 }
 
 function clr(){
-    document.getElementById("edu").value = "";
+    document.getElementById("answer").value = "";
 }
