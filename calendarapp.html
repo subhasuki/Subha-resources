@@ -71,11 +71,11 @@ input[type=text], input[type=number]{
     <script>
         function daycal(){
 
-        var d = document.getElementById("fdate").value;// console.log(fetchdate);
+        var d = document.getElementById("fdate").value;
 
-        var m = document.getElementById("mth").value; // console.log(fetchdate);
+        var m = document.getElementById("mth").value;
         
-        var y = document.getElementById("fyear").value;// console.log(fetchdate);
+        var y = document.getElementById("fyear").value;
 
                    
         var months = ["January" , "February", "March","April","May","June","July",
@@ -112,8 +112,6 @@ input[type=text], input[type=number]{
              
         var dd = m + '/' + d + '/' + y ;  
         console.log(dd);
-
-        // var findate = dd;
         
         var dt = new Date(dd);// console.log(d);
 
@@ -122,13 +120,7 @@ input[type=text], input[type=number]{
         var dayName = days[dt.getDay()]; 
         console.log(dayName);
 
-        var mm = months[ffmths]; 
-        console.log(mm);
-
-        // Var dateString = '05/09/1997';
-        // var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        // var d = new Date(dateString);
-        // var dayName = days[d.getDay()];
+        var mm = months[ffmths];//console.log(mm);
 
         if (dayName === "Sunday"){
             var dayName = dayName.fontcolor("red");
