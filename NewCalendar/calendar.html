@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Calendar</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <h1>Calendar APP</h1> -->
+    <div class="months">
+        <input type="text" id="month">
+        <div class="btn">
+            <input type="button" value="Get-Month" class="btncls" id="btnid"  onclick="calcMth()">
+        </div>
+    </div>
+   
+    <div class="calendar" id="calendar">
+        <div class="pic">
+            <h2 id="y"></h2>
+            <h3 id="m"></h3>
+        </div>
+        <div class="date calc_grid">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>            
+            
+          </div>
+          <div class="number calc_grid" id="number"></div>           
+        </div>
+    </div>
+</div>
+<script src="myscript.js"></script>
+</body>
+</html> 
