@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>News Site</title>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+
+        <div class="nav-bar" id="nav-bar">
+            <div class="newbtn">New</div>
+            <div class="menulist">
+
+                <div class="menu">
+                    <div class="menus" onclick="submenu()"><span class="material-icons-outlined menuicon hvr">menu</span></div>
+                    <div class="mails"><span class="material-icons-outlined mailicon hvr">email</span></div>
+                    <div class="grid"><span class="material-icons-outlined gridicon hvr">grid_view</span></div>
+                    <div class="chart"><span class="material-icons-outlined gridicon hvr">pie_chart</span></div>
+                    <div class="calendar"><span class="material-icons-outlined gridicon hvr">calendar_today</span></div>
+                </div>
+
+                <div class="submenu" id="submenubar">
+
+                    <div></div><br><br>
+
+                    <div class="menucom inboxbox clr">
+                        <div class="inbox hvr">Inbox</div>
+                        <div class="number"><span style="font-size: 8px;">04</span></div>
+                    </div>
+
+                    <div class="menucom smail hvr">Sent mail</div>
+
+                    <div class="menucom smail clr"><p class="hvr">Draft</p></div>
+
+                    <div class="menucom morebox hvr">
+                        <div class="more">More</div>
+                        <div calss="arrow hvr"><span class="material-icons-outlined ss">expand_less</span></div>
+                    </div>
+
+                    <div class="menucom smail clr important"><p class="hvr">Important</p></div>
+
+                    <div class="menucom smail important"><p class="hvr">Chats</p></div>
+
+                    <div class="menucom smail important clr"><p class="hvr">All Email</p></div>
+
+                    <div class="menucom smail important hvr">Spam</div>
+
+                    <div class="menucom smail important clr"><p class="hvr">Trash</p></div><br>
+
+                    <div class="menucom inboxbox nn">
+
+                        <div class="circle "><span class="material-icons-outlined">
+                            radio_button_unchecked
+                            </span></div>
+                        <div class="inbox tt hvr">Working</div>
+                        <div class="number"><span>+</span></div>
+
+                    </div>
+
+                    <div class="menucom inboxbox nn">
+
+                        <div class="circle cc2"><span class="material-icons-outlined">
+                            radio_button_unchecked
+                            </span></div>
+                        <div class="inbox tt hvr">Personal</div>
+                    </div>
+
+                    <div class="menucom inboxbox nn">
+
+                        <div class="circle cc3"><span class="material-icons-outlined">
+                            radio_button_unchecked
+                            </span></div>
+                        <div class="inbox tt hvr">Family</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contant">
+            
+            <div class="header">
+
+                <div class="navmenu" onclick="navmenu()"><span class="material-icons-outlined">menu</span></div>
+                <div class="voice"><span class="material-icons-outlined hvr">graphic_eq</span></div>
+                <div class="notifi hvr"><span class="material-icons-outlined">notifications</span></div>
+                <div class="usercircle hvr">
+                    <div class="upic"></div>
+                </div>
+                <div class="name">Mark  Doe<span>,PU</span></div>
+                <div calss="arrow"><span class="material-icons-outlined ss">keyboard_arrow_down</span></div>
+
+            </div>
+
+            <div class="page4" id="page4">                  
+
+            
+
+                <div class="imagepad" id="imagepad">
+                    <div class="chatsicon" onclick="chaticon()"><span class="material-icons-outlined hvr">chat</span></div>
+                    <div class="pad"><div class="image userimg1"></div></div>
+                    <div class="pad"><div class="image userimg2"></div></div>
+                    <div class="pad"><div class="image userimg3"></div></div>
+                    <div class="pad"><div class="image userimg4"></div></div>
+                    <div class="pad"><div class="image userimg5"></div></div>
+                    <div class="pad"><div class="image userimg6"></div></div>
+                    <div class="pad"><div class="image userimg7"></div></div>
+                    <div class="pad1"><div class="image c2">+</div></div>
+                </div>
+
+                <div class="card-aside" id="chats">
+                
+                    <div class="card-aside-header">
+
+                        <span class="material-icons ">more_horiz</span>
+                        <span class="material-icons filled">
+                            photo_camera
+                            </span>
+                    </div>
+
+                    <div class="chat-1" style="margin-top: 10px;">
+
+                        <div class="chat-details">
+
+                            <p>Cras effcitur effcitur. </p>
+                            <span> 08.52 am </span>
+
+                        </div>
+
+                        <div class="chat-icon">
+
+                            <img src="img/m1.jpg" class="uicon" alt=""> 
+
+                        </div>
+                        
+                            <!-- chat-1 -->
+                    </div>
+
+                    <div class="chat-2">
+
+                        <div class="chat-details-2">
+
+                            <p>Vivamus semper iacul ? </p>
+                            <span> 08.52 am </span>
+
+                        </div>
+
+                        <div class="chat-icon">
+
+                            <img src="img/m2.jpg" class="uicon" alt=""> 
+
+                        </div>
+                            
+                        <!-- chat-2 -->
+                    </div>
+
+
+                    <div class="chat-1">
+
+                        <div class="chat-details">
+
+                            <p>Sit amet nobel </p>
+                            <span> 08.52 am </span>
+
+                        </div>
+
+                        <div class="chat-icon">
+
+                            <img src="img/m1.jpg" class="uicon" alt=""> 
+
+                        </div>
+                        
+                        <!-- chat -1 -->
+                    </div>
+                    
+                    <br>
+
+                    <div id="day">
+
+                        <p>Tuesday</p>
+
+
+                    </div>
+
+                    <br><br>
+
+                    <div class="chat-2">
+
+                        <div class="chat-details-2">
+
+                            <p>Lorem ipsum dolor sit qamet nobele mode</p>
+                            <span> 08.52 am </span>
+
+                        </div>
+
+                        <div class="chat-icon">
+
+                            <img src="img/m2.jpg" class="uicon" alt=""> 
+
+                        </div>
+                            
+                        <!-- chat-2 -->
+                    </div>
+
+
+                    <div class="chat-1">
+
+                        <div class="chat-details">
+
+                            <p>Sit amet nobel mode qu lorem ipsum dolors </p>
+                            <span> 08.52 am </span>
+
+                        </div>
+
+                        <div class="chat-icon">
+
+                            <img src="img/m1.jpg" class="uicon" alt=""> 
+
+                        </div>
+                        
+                        <!-- chat -1 -->
+                    </div>
+
+                    <p class="pp1"> Gorden wagener is typing . <sup>.</sup> .</p>
+
+                    <div id="chat-footer">
+
+                            <span class="material-icons ">attach_file</span>
+                            <input type="text" value="Enter your message ">
+                            <span class="material-icons mood">mood</span>
+
+
+                    </div>
+
+                </div>
+                
+            </div>
+           
+            <div class="searchbox">
+
+                <div class="page1">
+
+                    <div class="shead">
+                        <div class="search"><span class="material-icons-outlined hvr">search</span></div>
+                        <div class="newes">Sort by:<span class="g5">&nbsp;Newest</span></div>
+                    </div>
+
+                    <div class="google" id="go1"  onclick="div1()">
+                        <div class="dot"><span class="material-icons-outlined">more_vert</span></div>
+                        <div class="gcircle"><div class="gicon"></div></div>
+                        <div class="gpara">
+                            <div class="g1">
+                                <p class="min">Google</p>
+                                <span class="g4">27 min ago</span>
+                            </div>
+
+                            <p class="g5">Work oportunity</p>
+
+                            <div class="g3">
+                                <p class="lorem">Lorem ipsum dolor sit amet consectetur nobel...</p>
+                                <span class="material-icons-outlined g2">star</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="google" id="go2" onclick="div2()">
+                        <div class="dot"><span class="material-icons-outlined">more_vert</span></div>
+                        <div class="rcircle"><div class="ricon">R</div></div>
+                        <div class="gpara a1">
+                            <div class="g1">
+                                <p class="min">Ronald Bass</p>
+                                <span class="g4">1 day ago</span>
+                            </div>
+
+                            <p class="g5">Once Upon a Time in Hollywood</p>
+
+                            <div class="g3">
+                                <p class="lorem">Lorem ipsum dolor sit amet consectetur nobel...</p>
+                                <span class="material-icons-outlined g2">star</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="google" id="go3" onclick="div3()">
+                        <div class="dot"><span class="material-icons-outlined">more_vert</span></div>
+                        <div class="gcircle"><div class="uicon"></div></div>
+                        <div class="gpara">
+                            <div class="g1">
+                                <p class="min">Michelle Pfeiffer</p>
+                                <span class="g4">3 days ago</span>
+                            </div>
+
+                            <p class="g5">Searching for UI Support</p>
+
+                            <div class="g3">
+                                <p class="lorem">Lorem ipsum dolor sit amet consectetur nobel...</p>
+                                <span class="material-icons-outlined g2">star</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="google" id="go4" onclick="div4()">
+                        <div class="dot"><span class="material-icons-outlined">more_vert</span></div>
+                        <div class="gcircle"><div class="cicon"></div></div>
+                        <div class="gpara">
+                            <div class="g1">
+                                <p class="min">Fantasy</p>
+                                <span class="g4">5 days ago</span>
+                            </div>
+
+                            <p class="g5">Work oportunity</p>
+
+                            <div class="g3">
+                                <p class="lorem">Lorem ipsum dolor sit amet consectetur nobel...</p>
+                                <span class="material-icons-outlined g2">star</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="google" id="go5" onclick="div5()">
+                        <div class="dot"><span class="material-icons-outlined">more_vert</span></div>
+                        <div class="gcircle">
+                            <div><span class="material-icons-outlined flag">emoji_flags</span></div>
+                        </div>
+                        <div class="gpara">
+                            <div class="g1">
+                                <p class="min">TransferWise Support</p>
+                                <span class="g4">5 days ago</span>
+                            </div>
+
+                            <p class="g5">Kovski,Inc.has send you money!</p>
+
+                            <div class="g3">
+                                <p class="lorem">Lorem ipsum dolor sit amet consectetur nobel...</p>
+                                <span class="material-icons-outlined g2">star</span>
+                            </div>
+
+                        </div>
+                    </div>   
+
+                    <div class="c1">
+                        <div class="cplus hvr">
+                            <div class="plus">+</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="page2">                   
+
+                    <div class="b1">
+                       <div class="b2">
+                           <div class="b3"><span class="material-icons-outlined hvr">delete</span></div>
+                           <div class="b4"><span class="material-icons-outlined hvr">reply</span></div>
+                           <div class="b5"><span class="material-icons-outlined hvr">reply_all</span></div>
+                       </div>
+                       <div class="b6">
+                        <div class="b7"><span class="material-icons-outlined hvr">chevron_left</span></div>
+                        <div class="b8"><span class="material-icons-outlined hvr">chevron_right</span></div>
+                       </div>
+                    </div>
+
+                    <div class="v1" id="div1">
+
+                    <div class="f1">
+                        <div class="f2 x1"></div>
+                        <div class="f3">
+                            <p class="p1">Michelle Pfeiffer</p>
+                            <p class="p2">pfeiffer@kovski.com</p>
+                        </div>
+                    </div>   
+
+                    <div class="f4"><p>Searching for UI Support</p></div>    
+
+                    <p class="f6">Hi mark ,</p> 
+
+                    <p class="f5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Quaerat doloremque possimus, sapiente debitis odio commodi, facere iste, 
+                        ea aut laudantium similique nesciunt excepturi. Distinctio labore incidunt 
+                        nemo fuga dolores porro? Quaerat doloremque possimus, sapiente debitis odio commodi, facere iste, 
+                        ea aut laudantium similique nesciunt excepturi.</p>   
+                        
+                    <p class="f6">All the best.</p>
+
+                    <div class="attimg">
+
+                        <p class="f6">3 Attachments</p>
+
+                        <div class="imgs">
+
+                            <div class="imgpadding">
+                                <div class="img img1"></div>
+                            </div>
+
+                            <div class="imgpadding">
+                                <div class="img img2"></div>
+                            </div>
+
+                            <div class="imgpadding">
+                                <div class="img img3"></div>
+                                <div class="imgclr"></div>
+                            </div>
+
+                        </div>                        
+                    </div>
+                    </div>
+
+                    <div class="v2" id="div2">
+
+                        <div class="f1">
+                            <div class="f2 x2"></div>
+                            <div class="f3">
+                                <p class="p1">Google</p>
+                                <p class="p2">google@kovski.com</p>
+                            </div>
+                        </div>   
+    
+                        <div class="f4"><p>Work Oportunity</p></div>    
+    
+                        <p class="f6">Hi mark ,</p> 
+    
+                        <p class="f5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Quaerat doloremque possimus, sapiente debitis odio commodi, facere iste, 
+                            ea aut laudantium similique nesciunt excepturi. Distinctio labore incidunt 
+                            nemo fuga dolores porro? Quaerat doloremque possimus, sapiente debitis odio commodi, facere iste, 
+                            ea aut laudantium similique nesciunt excepturi.</p>   
+                            
+                        <p class="f6">All the best.</p>
+    
+                        <div class="attimg">
+    
+                            <p class="f6">3 Attachments</p>
+    
+                            <div class="imgs">
+    
+                                <div class="imgpadding">
+                                    <div class="img img1"></div>
+                                </div>
+    
+                                <div class="imgpadding">
+                                    <div class="img img2"></div>
+                                </div>
+    
+                                <div class="imgpadding">
+                                    <div class="img img3"></div>
+                                    <div class="imgclr"></div>
+                                </div>
+    
+                            </div>                        
+                        </div>
+                     </div>
+
+                     <div class="v3" id="div3">
+
+                        <div class="f1">
+                            <div class="f2 x3"></div>
+                            <div class="f3">
+                                <p class="p1">Ronaid Bass</p>
+                                <p class="p2">ronaid@kovski.com</p>
+                            </div>
+                        </div>   
+    
+                        <div class="f4"><p>Once Upon a Time in Hollywood</p></div>    
+    
+                        <p class="f6">Hi mark ,</p> 
+    
+                        <p class="f5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Quaerat doloremque possimus, sapiente debitis odio commodi, facere iste, 
+                            ea aut laudantium similique nesciunt excepturi. Distinctio labore incidunt 
+                            nemo fuga dolores porro? Quaerat doloremque possimus, sapiente debitis odio commodi, facere iste, 
+                            ea aut laudantium similique nesciunt excepturi.</p>   
+                            
+                        <p class="f6">All the best.</p>
+    
+                        <div class="attimg">
+    
+                            <p class="f6">3 Attachments</p>
+    
+                            <div class="imgs">
+    
+                                <div class="imgpadding">
+                                    <div class="img img1"></div>
+                                </div>
+    
+                                <div class="imgpadding">
+                                    <div class="img img2"></div>
+                                </div>
+    
+                                <div class="imgpadding">
+                                    <div class="img img3"></div>
+                                    <div class="imgclr"></div>
+                                </div>
+    
+                            </div>                        
+                        </div>
+                     </div>
+
+                     <div class="v4" id="div4">
+
+                        <div class="f1">
+                            <div class="f2 x4"></div>
+                            <div class="f3">
+                                <p class="p1">Fantasy</p>
+                                <p class="p2">fantasy@kovski.com</p>
+                            </div>
+                        </div>   
+    
+                        <div class="f4"><p>Working Oportunity</p></div>    
+    
+                        <p class="f6">Hi mark ,</p> 
+    
+                        <p class="f5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Quaerat doloremque possimus, sapiente debitis odio commodi, facere iste, 
+                            ea aut laudantium similique nesciunt excepturi. Distinctio labore incidunt 
+                            nemo fuga dolores porro? Quaerat doloremque possimus, sapiente debitis odio commodi, facere iste, 
+                            ea aut laudantium similique nesciunt excepturi.</p>   
+                            
+                        <p class="f6">All the best.</p>
+    
+                        <div class="attimg">
+    
+                            <p class="f6">3 Attachments</p>
+    
+                            <div class="imgs">
+    
+                                <div class="imgpadding">
+                                    <div class="img img1"></div>
+                                </div>
+    
+                                <div class="imgpadding">
+                                    <div class="img img2"></div>
+                                </div>
+    
+                                <div class="imgpadding">
+                                    <div class="img img3"></div>
+                                    <div class="imgclr"></div>
+                                </div>
+    
+                            </div>                        
+                        </div>
+                     </div>
+
+                     <div class="v5" id="div5">
+
+                        <div class="f1">
+                            <div class="f2 x5"></div>
+                            <div class="f3">
+                                <p class="p1">TransferWise Support</p>
+                                <p class="p2">transferwise@kovski.com</p>
+                            </div>
+                        </div>   
+    
+                        <div class="f4"><p>Kovski,Inc.has sent you money!</p></div>    
+    
+                        <p class="f6">Hi mark ,</p> 
+    
+                        <p class="f5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Quaerat doloremque possimus, sapiente debitis odio commodi, facere iste, 
+                            ea aut laudantium similique nesciunt excepturi. Distinctio labore incidunt 
+                            nemo fuga dolores porro? Quaerat doloremque possimus, sapiente debitis odio commodi, facere iste, 
+                            ea aut laudantium similique nesciunt excepturi.</p>   
+                            
+                        <p class="f6">All the best.</p>
+    
+                        <div class="attimg">
+    
+                            <p class="f6">3 Attachments</p>
+    
+                            <div class="imgs">
+    
+                                <div class="imgpadding">
+                                    <div class="img img1"></div>
+                                </div>
+    
+                                <div class="imgpadding">
+                                    <div class="img img2"></div>
+                                </div>
+    
+                                <div class="imgpadding">
+                                    <div class="img img3"></div>
+                                    <div class="imgclr"></div>
+                                </div>
+    
+                            </div>                        
+                        </div>
+                     </div>
+
+                    <div class="f7">
+                         <div class="f9"><p class="f6">Hi Michello,</p></div>
+                         <div>
+                             <div class="f8">
+                                 <div class="f6" style="border-right: 1px solid gray;"><span class="material-icons-outlined">attach_file</span></div>
+                                 <div class="f6"><span class="material-icons-outlined">mood</span></div>
+                             </div>
+                         </div>
+                    </div>
+                
+                   
+
+                </div>
+
+                <div class="page3">                  
+
+                    <div class="chatsicon" onclick="chaticon()"><span class="material-icons-outlined hvr">chat</span></div>
+
+                    <div class="imagepad">
+
+                        <div class="pad"><div class="image userimg1"></div></div>
+                        <div class="pad"><div class="image userimg2"></div></div>
+                        <div class="pad"><div class="image userimg3"></div></div>
+                        <div class="pad"><div class="image userimg4"></div></div>
+                        <div class="pad"><div class="image userimg5"></div></div>
+                        <div class="pad"><div class="image userimg6"></div></div>
+                        <div class="pad"><div class="image userimg7"></div></div>
+                        <div class="pad1"><div class="image c2">+</div></div>
+                    </div>
+
+                    <div class="card-aside" id="chats">
+                    
+                        <div class="card-aside-header">
+
+                            <span class="material-icons ">more_horiz</span>
+                            <span class="material-icons filled">
+                                photo_camera
+                                </span>
+                        </div>
+
+                        <div class="chat-1" style="margin-top: 10px;">
+
+                            <div class="chat-details">
+
+                                <p>Cras effcitur effcitur. </p>
+                                <span> 08.52 am </span>
+
+                            </div>
+
+                            <div class="chat-icon">
+
+                                <img src="img/m1.jpg" class="uicon" alt=""> 
+
+                            </div>
+                            
+                                <!-- chat-1 -->
+                        </div>
+
+                        <div class="chat-2">
+
+                            <div class="chat-details-2">
+
+                                <p>Vivamus semper iacul ? </p>
+                                <span> 08.52 am </span>
+
+                            </div>
+
+                            <div class="chat-icon">
+
+                                <img src="img/m2.jpg" class="uicon" alt=""> 
+
+                            </div>
+                                
+                            <!-- chat-2 -->
+                        </div>
+
+
+                        <div class="chat-1">
+
+                            <div class="chat-details">
+
+                                <p>Sit amet nobel </p>
+                                <span> 08.52 am </span>
+
+                            </div>
+
+                            <div class="chat-icon">
+
+                                <img src="img/m1.jpg" class="uicon" alt=""> 
+
+                            </div>
+                            
+                            <!-- chat -1 -->
+                        </div>
+                        
+                        <br>
+
+                        <div id="day">
+
+                            <p>Tuesday</p>
+
+
+                        </div>
+
+                        <br><br>
+
+                        <div class="chat-2">
+
+                            <div class="chat-details-2">
+
+                                <p>Lorem ipsum dolor sit qamet nobele mode</p>
+                                <span> 08.52 am </span>
+
+                            </div>
+
+                            <div class="chat-icon">
+
+                                <img src="img/m2.jpg" class="uicon" alt=""> 
+
+                            </div>
+                                
+                            <!-- chat-2 -->
+                        </div>
+
+
+                        <div class="chat-1">
+
+                            <div class="chat-details">
+
+                                <p>Sit amet nobel mode qu lorem ipsum dolors </p>
+                                <span> 08.52 am </span>
+
+                            </div>
+
+                            <div class="chat-icon">
+
+                                <img src="img/m1.jpg" class="uicon" alt=""> 
+
+                            </div>
+                            
+                            <!-- chat -1 -->
+                        </div>
+
+                        <p class="pp1"> Gorden wagener is typing . <sup>.</sup> .</p>
+
+                        <div id="chat-footer">
+
+                                <span class="material-icons ">attach_file</span>
+                                <input type="text" value="Enter your message ">
+                                <span class="material-icons mood">mood</span>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
