@@ -55,7 +55,7 @@ function calcMth(){
 
         if(oldmonth==1 || oldmonth ==3 || oldmonth==5 ||oldmonth == 8|| oldmonth==10 ){
 
-            var a = (((sum-1)%7)-2); //       console.log(a);
+            var a = (((sum-1)%7)-2); // console.log(a);
             var c = output[a];       //console.log(c);
 
         }
@@ -108,39 +108,43 @@ function calcMth(){
 
             document.getElementById("number").appendChild(finl);
 
-            if(j == 1 && a == 0){
+            if(j == 1 && a == 0){                
                 
-                
-                finl.style.gridColumnStart = a+6; 
-                // alert(a);
+                finl.style.gridColumnStart = a+6;  // alert(a);
 
             }
+
             else if(j == 1 && a == 1){
-                // alert("alo")
 
                 finl.style.gridColumnStart = a+6; 
                 // console.log(a);
             }
+
             else if(j === 1){
-                // alert("oi")
 
                 finl.style.gridColumnStart = a-1; 
                 // console.log(a);
             } 
+
+            else if( j == "Saturday" || j == "Sunday" ){
+
+                finl.style.color = "red";
+            }
         
         }    
         // var colors = ["#ff685d", "#262626", "#262626", "#262626", "#262626", "#262626", "#ff685d"];
 
         // var text= '';
 
-        // for (var i = 0; i < days.length; i++) { // loop runs for every superhero
+        // for (var i = 0; i < days.length; i++) { 
 
         //   text += "<font color='"+colors[i]+"'>"+days[i] +  "</font><br>";
 
-
         // }
+
         // finl.style.gridColumnStart = text; 
-        // console.log(text);
+        // // console.log(text);
+
         // document.getElementById("number").value = text;
 
         document.getElementById("month").value  = '';

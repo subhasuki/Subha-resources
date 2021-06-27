@@ -47,9 +47,7 @@ function calcMth(){
              
         //var dd = oldmonth + '/' + ddate + '/' + year ;  //    console.log(dd);
 
-        var hh = new Date(year,mmth,ddate).getDay();
-
-        console.log(hh);
+        var hh = new Date(year,mmth,ddate).getDay(); //console.log(hh);
 
         //var dt = new Date(dd);  
         //console.log(dt);

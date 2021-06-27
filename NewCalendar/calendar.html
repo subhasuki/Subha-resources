@@ -10,39 +10,51 @@
 </head>
 <body>
     <div class="container">
-<form action="" onsubmit="event.preventDefault();calcMth();">
-    <div class="months">
-        <input type="text" id="month" placeholder="Month" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
-            <button class="btncls" id="btnid">Get-Month</button>
-    </div><br><br>
-</form>
+
+       
+
     <div class="calendar" id="calendar">
+
+
+        <form action="" onsubmit="event.preventDefault();calcMth();">
+
+            <div class="months">
+                <input type="text" id="date" placeholder="Date" required>
+                <input type="text" id="month" placeholder="Month" required>
+                <button class="btncls" id="btnid">Get-val</button>
+            </div>
+
+        </form>
+
+
         <div class="pic">
-            <h2 id="y"></h2>
-            <h3 id="m"></h3>
-        </div>
-        <div class="date calc_grid">
-            <div class="day">S</div>
-            <div class="day">M</div>
-            <div class="day">T</div>
-            <div class="day">W</div>
-            <div class="day">T</div>
-            <div class="day">F</div>
-            <div class="day">S</div>            
+            <h3 id="m"></h3><h2 id="y"></h2>
             
-          </div>
+        </div>
+
+        <div class="date calc_grid">
+            <div class="day">Su</div>
+            <div class="day">Mo</div>
+            <div class="day">Tu</div>
+            <div class="day">We</div>
+            <div class="day">Th</div>
+            <div class="day">Fr</div>
+            <div class="day">Sa</div> 
+        </div>
+
+
           <div id="clr">
-          <div class="number calc_grid ss" id="number"></div>     
-          <div class="number calc_grid" id="number"></div>   
-          <div class="number calc_grid" id="number"></div>         
-          <div class="number calc_grid" id="number"></div>   
-          <div class="number calc_grid" id="number"></div>   
-          <div class="number calc_grid" id="number"></div>   
-          <div class="number calc_grid ss" id="number"></div>   
+            <div class="number calc_grid ss" id="number"></div>     
+            <div class="number calc_grid" id="number"></div>   
+            <div class="number calc_grid" id="number"></div>         
+            <div class="number calc_grid" id="number"></div>   
+            <div class="number calc_grid" id="number"></div>   
+            <div class="number calc_grid" id="number"></div>   
+            <div class="number calc_grid ss" id="number"></div>   
         </div>
         </div>
     </div>
 </div>
-<script src="mathdate.js"></script>
+<script src="dateday.js"></script>
 </body>
 </html> 
