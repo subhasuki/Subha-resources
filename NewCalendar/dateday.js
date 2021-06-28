@@ -2,6 +2,7 @@ function calcMth(){
 
     document.getElementById("month").innerHTML  = '';
     document.getElementById('number').innerHTML = ''; 
+    document.getElementById('date').innerHTML = ''; 
 
     var olddate= document.getElementById("date").value;  //console.log(olddate);
 
@@ -14,7 +15,6 @@ function calcMth(){
     var monthvalue  = [31,28,31,30,31,30,31,31,30,31,30,31];
 
     var days = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday", "Friday" , "Saturday"]; 
-
     
     var mm = months[m];  // console.log(mm);
 
@@ -41,26 +41,49 @@ function calcMth(){
 
     }
 
-    var index = [5,6,0,1,2,3,4];
+    // var index = [5,6,0,1,2,3,4];
 
     // var [z,y,x,w,v,u,t] = index;
 
-    var output = index.map(z => days[z]);  // console.log(output);
+    // var output = index.map(z => days[z]);  // console.log(output);
 
     var sum = 0;    
+
+    if(months[m] === "January"){
+
+        totsum = olddate;
+        console.log(totsum);
     
+    }else{
+
     for (var i=0;i<oldmonth-1;i++){
 
 
-    sum += monthvalue[i];  
+    var e = sum += monthvalue[i];  
 
-    } // console.log(sum);
+    }  console.log(e);
 
-    var totsum = Number(olddate) + sum; // console.log(totsum)
+    var totsum = Number(e) + 1;  console.log(totsum)
+}
 
-    var a = ((totsum-1)%7);  console.log(a);
-    var c = output[a];   //console.log(c);
-    var d = output.indexOf(c); //console.log(d);
+    var a = (totsum%7);  console.log(a);
+
+    // var c = output[a];   console.log(c);
+
+    //var d = output.indexOf(c); console.log(d);
+
+    if ( (a === 1) || ( a === 2 )) {
+
+        var res = a + 5;
+    }
+    else if( (a === 4) || (a === 5) || (a === 7) || (a === 3) || (a === 6)  ){
+
+        var res = a - 2;
+
+    }else if( a === 0){
+
+        var res = a + 5;
+    }
 
     for (var j = 1; j <= monthvalue[m] ; j++) {
 
@@ -77,63 +100,25 @@ function calcMth(){
         document.getElementById("number").appendChild(finl);
 
 
-        if(j === 1 ){                
-                
-            finl.style.gridColumnStart = d;  // alert(a);
+        if(j == olddate){            
             
-            document.getElementById("date").style.backgroundColor = "#088EFA";
-
-            // finl.style.backgroundColor = "#088EFA";
-
+            finl.style.backgroundColor = "#088EFA";
+            finl.style.padding = "5px 5px";
+            finl.style.borderRadius = "2px";
+            finl.style.color = "white";
+            finl.style.border = "2px solid #CCE9FD";
         }
         
+        if ( j === 1 ){
 
-        // if(j == 1 && a == 0 && a == 1){                
-            
-        //     finl.style.gridColumnStart = a+5;  // alert(a);
+            finl.style.gridColumnStart = res;
+        }
 
-        // }
 
-        // else if(j == 1 && a == 2){
-
-        //     finl.style.gridColumnStart = a+2; 
-        //     // console.log(a);
-        // }
-
-        // else if(j === 1  && a == 3){
-
-        //     finl.style.gridColumnStart = a-2; 
-        //     // console.log(a);
-        // } 
-
-        // else if(j === 1  && a == 5){
-
-        //     finl.style.gridColumnStart = a-3; 
-        //     // console.log(a);
-        // } 
-
-        // else if( j == "Saturday" || j == "Sunday" ){
-
-        //     finl.style.color = "red";
-        // }
-    
     }    
-    // var colors = ["#ff685d", "#262626", "#262626", "#262626", "#262626", "#262626", "#ff685d"];
-
-    // var text= '';
-
-    // for (var i = 0; i < days.length; i++) { 
-
-    //   text += "<font color='"+colors[i]+"'>"+days[i] +  "</font><br>";
-
-    // }
-
-    // finl.style.gridColumnStart = text; 
-    // // console.log(text);
-
-    // document.getElementById("number").value = text;
 
     document.getElementById("month").value  = '';
+    document.getElementById("date").value  = '';
 
 
 }
