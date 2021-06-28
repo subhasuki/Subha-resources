@@ -97,7 +97,7 @@ h2,h3{
     display: flex;
     text-align: center;
     justify-content: center;
-    font-weight: 600;
+    font-weight: lighter;
     color: #C0C4C8;
     cursor: alias;
 }
