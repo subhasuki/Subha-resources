@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="circle-top"></div>
+        <div class="circle-bottom"></div>
+        
+        <div class="banner">
+
+            <div class="empty-space"></div>
+            <div class="views" id="views">
+                <input class="top" id="topans" readonly>
+                <input class="bottom" name="input" id="answer" readonly>
+
+            </div>
+
+            
+            <button id="clear" name="clear" value=" C " class="yclr" onclick="clr(20)">AC</button>
+
+            <button class="operator yclr" animate="num-ples-mins">+/-</button>
+
+            <button class="operator yclr" name="div" value="%"  onclick="getval('%')" animate="num-mod">%</button>             
+
+            <button class="operator yclr" name="div" value="/"  onclick="getval('/')" animate="num-div">/</button>
+
+            <button name="seven" value="7" onclick="getval('7')" animate="num-7">7</button>
+
+            <button name="eight" value="8" onclick="getval('8')" animate="num-8">8</button>
+
+            <button name="nine" value="9" onclick="getval('9')" animate="num-9">9</button>
+
+            <button class="operator yclr" name="times" value="*"  onclick="getval('*')" animate="num-mul" style="font-size: 40px;">*</button>
+
+            <button name="four" value="4" onclick="getval('4')" animate="num-4">4</button>
+
+            <button name="five" value="5" onclick="getval('5')" animate="num-5">5</button>
+
+            <button name="six" value="6" onclick="getval('6')" animate="num-6">6</button>
+
+            <button class="operator yclr" name="minus" value="-" onclick="getval('-')" animate="num-sub" style="font-size: 30px;">-</button>
+
+            <button name="one" class="one" value="1" onclick="getval('1')" animate="num-1">1</button>
+
+            <button name="two" value="2" onclick="getval('2')" animate="num-2">2</button>
+
+            <button name="three" value="3" onclick="getval('3')" animate="num-3">3</button>
+
+            <button class="operator yclr" name="plus" value="+"  onclick="getval('+')" animate="num-plus">+</button>            
+
+            <button name="zero" value="0"  onclick="getval('0')" class="zero box" animate="num-0">0</button>
+
+            <button></button>
+
+
+            <button name="dot" value="."  onclick="getval('.')" class="box" animate="num-dot">.</button>
+
+            <button name="doit" value=" = "  onclick="soul()" class="box bb" animate="num-equal" style="padding: 15px;"><span class="ybck">=</span></button>            
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
