@@ -76,6 +76,7 @@
       background-color: black;
       border: none;
       outline: none;
+      padding: 28px;
   }
 
   .views,.empty-space {
@@ -121,70 +122,248 @@
   }
   
   .zero {
-    grid-column: span 2;
+    grid-column: span 1;
     text-align: left;
-    padding-left: 40px;
+    /* padding-left: 40px; */
     border-radius:0 0 0 20px;
   }
 
-  .box{
+  /* .box{
       padding: 25px;
-  }
+  } */
 
   .bb{
       border-radius: 0 0 20px 0;
   }
   .ybck{
       background-color: #FA583C;
-      padding:14px;
+      padding:10px 15px;
       border-radius: 17px;
       font-size: 2rem;
   }
   .yclr{
       color:#FA583C !important;
   }
-input{
-    outline: none;
-    cursor: alias;
+  input{
+      outline: none;
+      cursor: alias;
+  }
+
+
+
+
+
+  @media only screen  and (max-width:700px){
+
+    .banner{
+      grid-template-columns: repeat(4,60px);
+      grid-template-rows: minmax(50px,auto) repeat(5,66px);
+    }
+    .top, .bottom {
+      width: 240px;
+    }
+    .ybck {
+      padding: 10px;
+      border-radius: 9px;
+    }
+    
+    }
+
+    @media only screen  and (max-width:480px){
+
+    .banner{
+      grid-template-columns: repeat(4,50px);
+      grid-template-rows: minmax(50px,auto) repeat(5,56px);
+    }
+    .top, .bottom {
+      width: 200px;
+    }
+    .ybck {
+      padding: 6px;
+      border-radius: 9px;
+    }
+    
+    }
+
+   .num-0{
+
+    animation: leftpos0 550ms ease;
+  }
+  @keyframes leftpos0 {
+   
+     0% {position: relative; left:5px; top: -10px; opacity: 0.5;}
+     100%   {position: relative;z-index: 1; top:-410px;left:230px;background-color: transparent; font-size: 5rem;}
+  }
+
+  .num-1{
+
+    animation: leftpos1 550ms ease;
+  }
+
+  @keyframes leftpos1 {
+
+    0%     {position: relative; left:-2px; top: -20px; opacity: 0.5;}
+    100%   {position: relative;top: -330px;left: 230px;font-size: 5rem;}
+  }
+
+  .num-2{
+
+    animation: leftpos2 500ms ease;
 }
-/* #views {
-  height: 100px;
-  transition: .3s ease;
+@keyframes leftpos2   {
+
+    0%     {position: relative; left:-2px; top: 0px; color: white; opacity: 0.5;}
+    100%   {position: relative; top: -332px;left: 145px;background-color: transparent;color: white;font-size: 5rem;}
 }
 
-#views:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  width: 110%;
-  height: 110%;
-  background: rgba(57, 161, 255, 0.5);
-  transition: transform 0.5s ease;
-  border-radius: 50%;
+.num-3{
+
+  animation: leftpos3 500ms ease;
+}
+@keyframes leftpos3 {
+
+ 0% {position: relative; left:-2px; top: -20px; opacity: 0.5;}
+ 100%   {position:relative;top: -332px;left: 74px;background-color: transparent;font-size: 5rem;}
+} 
+
+.num-4{
+
+  animation: leftpos4 500ms ease;
+}
+@keyframes leftpos4 {
+
+ 0% {position: relative; left:-2px; top: -20px; opacity: 0.5;}
+ 100%   {position: relative; top: -253px; left: 217px;background-color: transparent;font-size: 5rem;}
 }
 
-#views.active:before {
-  transform: translate(-50%, -50%) scale(1);
-} */
+.num-5{
 
-#views {
-  animation-name: slideInLeft;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  }
-  @keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
-    left:10;
-    visibility: visible;
-  }
-  to {
-    left:100%;
-    transform: translateX(0);
-  }
-  }
- 
+  animation: leftpos5 500ms ease;
+}
+@keyframes leftpos5 {
 
+ 0% {position: relative; left:-2px; top: -20px; opacity: 0.5;}
+ 100%   {position: relative; top:-240px;left:144px;background-color: transparent;font-size: 5rem;}
+} 
+
+.num-6{
+
+  animation: leftpos6 500ms ease;
+}
+@keyframes leftpos6 {
+
+ 0% {position: relative; left:-2px; top: -20px; opacity: 0.5;}
+ 100%   {position: relative; top:-240px;left: 70px;background-color: transparent;font-size: 5rem;}
+} 
+
+.num-7{
+
+  animation: leftpos7 500ms ease;
+}
+@keyframes leftpos7 {
+
+ 0% {position: relative; left:-2px; top: -20px; opacity: 0.5;}
+ 100%   {position: relative;top: -162px;left: 221px; background-color: transparent;font-size: 5rem;}
+} 
+
+.num-8{
+
+  animation: leftpos8 500ms ease;
+}
+@keyframes leftpos8 {
+
+ 0% {position: relative; left:-2px; top: -20px; opacity: 0.5;}
+ 100%   {position: relative; top:-162px;left:140px; background-color: transparent;font-size: 5rem;}
+} 
+
+.num-9{
+
+  animation: leftpos9 500ms ease;
+}
+@keyframes leftpos9 {
+
+  0% {position: relative; left:-2px; top: 0px; color: white; opacity: 0.5;}
+  100%   {position: relative; top:-165px; left:80px; background-color: transparent;color: white;font-size: 5rem;}
+
+} 
+
+.num-mod{
+
+  animation: leftpos10 500ms ease;
+}
+@keyframes leftpos10 {
+
+ 0% {position: relative; left:-2px; top: 0px; color: white; opacity: 0.5;}
+ 100%   {position: relative;top: -90px; left: 63px;background-color: transparent;color: white;font-size: 5rem;}
+} 
+
+.num-div{
+
+  animation: leftpos11 500ms ease;
+}
+@keyframes leftpos11 {
+
+ 0% {position: relative; left:-2px; top: -20px; color: white; opacity: 0.5;}
+ 100%   {position: relative; top: -100px;left: 16px; background-color: transparent;color: white;font-size: 5rem;}
+}
+
+.num-mul{
+
+  animation: leftpos12 550ms ease;
+}
+@keyframes leftpos12 { 
+
+ 0% {position: relative; left:-2px; top: -20px; color: white; opacity: 0.5;}
+ 100%   {position: relative;top: -190px;left: 7px;background-color: transparent; font-size: 5rem;color: white;font-size: 5rem;}
+}
+
+.num-sub{
+
+  animation: leftpos13 500ms ease;
+}
+@keyframes leftpos13 {
+
+ 0% {position: relative; left:-2px; top: -20px; color: white;}
+ 100%   {position: relative; top:-250px;left:10px;background-color: transparent;color: white;font-size: 5rem;}
+}
+
+.num-plus{
+
+  animation: leftpos14 500ms ease;
+}
+@keyframes leftpos14 {
+
+ 0% {position: relative; left:-2px; top: -20px; color: white; opacity: 0.5;}
+ 100%   {position: relative;top: -320px;left: 2px;background-color: transparent; color: white;font-size: 5rem;}
+}
+
+.num-dot{
+
+  animation: leftpos15 500ms ease;
+}
+@keyframes leftpos15 {
+
+ 0% {position: relative; left:-2px; top: -20px; color: white; opacity: 0.5;}
+ 100%   {position: relative;top: -457px;left: 76px;background-color: transparent; color: white;font-size: 5rem;}
+}
+
+.num-clr{
+
+  animation: leftpos16 500ms ease;
+}
+@keyframes leftpos16 {
+
+ 0% {position: relative; left:-240px;opacity: o.5;}
+ 100%   {position: relative;left:0px; top: 0px; background-color: transparent;font-size: 5rem;opacity: 1;}
+}
+
+.num-result{
+
+  animation: leftpos17 500ms ease;
+}
+@keyframes leftpos17 {
+
+ 0% {position: relative;top:400px; opacity: 0.5;}
+ 100%   {position: relative;left:0px; top: 0px; background-color: transparent;font-size: 5rem;}
+}
 
