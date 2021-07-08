@@ -9,17 +9,19 @@ function getval(val){
         clone.classList.add(b.getAttribute("animate"));
         b.appendChild(clone);
 
-        tans= '';        
+        // tans= '';        
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
-
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
+               
         
-        setTimeout(function() { b.removeChild(clone); },370)
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
+        },370)
     }
     else if(val == 2){
         var b = document.getElementsByTagName("button")[13];    // console.log(b);
@@ -27,17 +29,19 @@ function getval(val){
         clone.classList.add(b.getAttribute("animate"));
         b.appendChild(clone);
 
-        tans= '';        
+        // tans= '';        
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
-
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+              
+        setTimeout(function() { 
+            b.removeChild(clone);
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
+    
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+         },370)
     }
     else if(val == 3){
         var b = document.getElementsByTagName("button")[14];    // console.log(b);
@@ -45,17 +49,20 @@ function getval(val){
         clone.classList.add(b.getAttribute("animate"));
         b.appendChild(clone);
 
-        tans= '';        
+        // tans= '';        
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
-
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
         
-        setTimeout(function() { b.removeChild(clone); },370)
+        
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
+
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
     else if(val == 4){
         var b = document.getElementsByTagName("button")[8];    // console.log(b);
@@ -63,17 +70,19 @@ function getval(val){
         clone.classList.add(b.getAttribute("animate"));
         b.appendChild(clone);
 
-        tans= '';        
+        // tans= '';        
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
 
     else if(val == 5){
@@ -82,17 +91,19 @@ function getval(val){
         clone.classList.add(b.getAttribute("animate"));
         b.appendChild(clone);
 
-        tans= '';        
+        // tans= '';        
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
 
     else if(val == 6){
@@ -101,17 +112,19 @@ function getval(val){
         clone.classList.add(b.getAttribute("animate"));
         b.appendChild(clone);
 
-        tans= '';        
+        // tans= '';        
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
 
     else if(val == 7){
@@ -124,13 +137,15 @@ function getval(val){
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
 
     else if(val == 8){
@@ -143,13 +158,15 @@ function getval(val){
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
 
     else if(val == 9){
@@ -162,13 +179,15 @@ function getval(val){
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
 
     else if(val == 0){
@@ -181,13 +200,15 @@ function getval(val){
         clone.style.backgroundColor="transparent";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
 
     else if(val == "/"){
@@ -200,13 +221,15 @@ function getval(val){
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone);
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
 
     else if(val == "%"){
@@ -219,13 +242,15 @@ function getval(val){
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
 
     else if(val == "*"){
@@ -238,13 +263,15 @@ function getval(val){
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
     else if(val == "-"){
         var b = document.getElementsByTagName("button")[11];    // console.log(b);
@@ -256,13 +283,15 @@ function getval(val){
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone);
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+         },370)
     }
 
     else if(val == "+"){
@@ -275,13 +304,15 @@ function getval(val){
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
     else if(val == "."){
         var b = document.getElementsByTagName("button")[17];    // console.log(b);
@@ -293,13 +324,15 @@ function getval(val){
         clone.style.backgroundColor="black";
         clone.style.color="white";
         clone.style.border="none";
-        document.getElementById("answer").value=val;  // console.log(val);
-        document.getElementById("topans").value+=val;
+                
+        setTimeout(function() { 
+            b.removeChild(clone); 
+            document.getElementById("answer").value=val;  // console.log(val);
+            document.getElementById("topans").value+=val;
 
-        ans += val; // console.log(b.value);
-        tans += val; // console.log(b.value);  
-        
-        setTimeout(function() { b.removeChild(clone); },370)
+            ans += val; // console.log(b.value);
+            tans += val; // console.log(b.value);  
+        },370)
     }
 }
 
@@ -339,7 +372,5 @@ function clr(){
             z.classList.remove("num-clr")
 
       },500)
-            tans.innerHTML = 0;  
-
-    
+            tans.innerHTML = 0;      
 }
