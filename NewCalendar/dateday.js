@@ -14,7 +14,6 @@ function calcMth(){
     var monthvalue  = [31,28,31,30,31,30,31,31,30,31,30,31];
 
     var days = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday", "Friday" , "Saturday"]; 
-
     
     var mm = months[m];  // console.log(mm);
 
