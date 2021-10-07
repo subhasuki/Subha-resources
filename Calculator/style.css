@@ -1,0 +1,85 @@
+
+.container{
+    background-color: #5dc4c4;
+    width:300px;
+    height: 400px;
+    margin: auto;
+    box-shadow: 5px 10px 8px 10px #888888;
+    padding: 50px;
+}
+h2{
+    text-align: center;
+    color: rgb(66, 223, 183);
+    text-shadow: -1px 0 rgb(0, 95, 71), 0 1px rgb(0, 95, 71), 1px 0 rgb(0, 95, 71), 0 -1px rgb(0, 95, 71);
+    font-size: 30px;
+}
+input{
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #495069;
+    background-color: 4px;
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+}
+
+.operator{
+    background-color: #f1ff92;
+    position: relative;
+}
+
+
+#clear{
+    float: left;
+    position: relative;
+    display: block;
+    background-color: #ff9fa8;
+    margin-bottom: 15px;
+}
+#answer{
+    width: 270px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #f1faeb;
+    float: left;
+}
+
+#answer:hover{
+    width: 270px;
+    font-size: 26px;
+    text-align: center;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+    background-color: #f1faeb;
+}
+/* add input hover effectg */
+input:hover{
+    border: 0 solid #000;
+    color: #7e7c7c;
+    background-color: #146cf133;
+    border-radius: 4px;
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px #00285c;
+}
+/* hover */
+.operator:hover{
+    background-color: #e7f56b;
+    box-shadow: 0 4px #b7c259;
+}
+/* hover */
+#clear:hover{
+    float: left;
+    display: block;
+    background-color: #f297a0;
+    margin-bottom: 15px;
+    box-shadow: 0 4px #cc7f86;
+}

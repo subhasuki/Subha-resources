@@ -30,6 +30,7 @@ html{
 .head,h1{
     position: sticky;
 }
+.tpost{display: none;}
 
 .head{
     width:100%;
@@ -42,6 +43,7 @@ html{
     background: white;
     z-index: 2;
     border-right: 1px solid #ECEEF2;
+    margin-bottom: 50px;
 }
 .h-a-1:hover{
     background-color: rgb(247, 247, 247);
@@ -459,3 +461,6 @@ h1{
 .rp-img-6:hover{
     opacity: 0.9;
 }
+
+.recentpost-2,.recentpost-3
+{display: none;}

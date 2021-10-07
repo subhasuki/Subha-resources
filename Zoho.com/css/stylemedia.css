@@ -1,0 +1,315 @@
+@media only screen and (max-width:1024px){
+     .contacts{display: none !important;}
+     .bannercontent h1{
+        font-size: 25px;
+        margin-top: 60px;
+        font-weight: 900;
+        letter-spacing: 0px;
+        line-height: 1.8;
+    }
+    .build-child2 p {margin-bottom: 10px;}
+    .ccp h3{ font-size: 20px;line-height: 45px;}
+    .bannerp{font-size: 15px;line-height: 1.5;}
+    .cicons1,.cicons5{margin-left: -115px;}
+    .cicons4{margin-top: -140px;}
+    .cicons2,.cicons3,.cicons4,.cicons6,.cicons7{margin-left: -125px;}
+    .cicons1 p, .cicons4 p{width:217px;}
+    .cicons2 p ,.cicons3 p{width:205px;}
+    .cicons6 p{width:162px;}
+    .cicons5 h2{width:125px;}
+    .cicons7 p{width:245px}
+    .allapps1 {width: 400px;}
+    .zohoapps{grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "appgrid"
+                            "appgrid3"
+                            "appgrid2" ; 
+
+    }
+    
+    .customgrid{
+        display: grid;
+        width: 100%;
+        height:1700px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas:
+            "customerhelp1 customerhelp1 customerhelp1"    
+            "customerhelp4 customerhelp4 customerhelp5"    
+            "customerhelp10 customerhelp11 customerhelp12"  
+            "customerhelp16 customerhelp17 customerhelp18"
+            "customerhelp20         .           .        "
+
+            " customerhelp2 customerhelp2 customerhelp2"
+            " customerhelp6 customerhelp6 customerhelp7"
+            "customerhelp13      .               .     "
+            "customerhelp19 customerhelp19 customerhelp19 " 
+            "customerhelp21 customerhelp21 customerhelp21"
+            
+            "customerhelp3 customerhelp3 customerhelp3"
+            "customerhelp8 customerhelp8 customerhelp9"
+            "customerhelp14 customerhelp15      .     ";}
+
+            .customerhelp1{grid-area:customerhelp1;}
+            .customerhelp2{grid-area:customerhelp2;}
+            .customerhelp4{grid-area:customerhelp4;}
+            .customerhelp5{grid-area:customerhelp5;}
+            .customerhelp6{grid-area:customerhelp6;}
+            .customerhelp7{grid-area:customerhelp7;}
+            .customerhelp8{grid-area:customerhelp8;}
+            .customerhelp9{grid-area:customerhelp9;}
+            .customerhelp10{grid-area:customerhelp10;}
+            .customerhelp11{grid-area:customerhelp11;}
+            .customerhelp12{grid-area:customerhelp12;}
+            .customerhelp13{grid-area:customerhelp13;}
+            .customerhelp14{grid-area:customerhelp14;}
+            .customerhelp15{grid-area:customerhelp15;}
+            .customerhelp16{grid-area:customerhelp16;}
+            .customerhelp17{grid-area:customerhelp17;}
+            .customerhelp18{grid-area:customerhelp18;}
+            .customerhelp19{grid-area:customerhelp19;}
+            .customerhelp20{grid-area:customerhelp20;}
+            .customerhelp21{grid-area:customerhelp21;}
+            .customerhelp20 label{line-height: 4px;}
+            .bfrgrid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                width: 100%;
+                height: auto;
+                grid-template-areas: "bfrfooter1 bfrfooter2"
+                                    "bfrfooter3 bfrfooter4";
+            }
+            .bfrfooter1 p,.bfrfooter2 p{width:350px !important; }
+            .bfrfooter1,.bfrfooter2{margin-bottom:20px;}
+            .bfrfooter3,.bfrfooter4{margin-bottom: 136px;}
+            .innerfooter{padding:20px 20px 0 20px}
+            .innerfooter1 { padding: 0 10px 0 10px;}
+            .contacts{display: none !important;}
+            .abouts{padding: 0 !important;}
+            .outerfooter .innerfooter1>div{padding: 0 20px 0 0;min-width: 230px;}
+            .crmbanner {
+                display: grid;
+                width: 100%;
+                height: 700px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas:
+                     "platform  platform "
+                     "fapp fapp2"
+                     "fapp3 fapp4";
+            }
+    }
+@media only screen and (max-width:1000px){
+.container{width:90%}
+    .bannercontent h1{
+        font-size: 25px;
+        margin-top: 60px;
+        font-weight: 900;
+        letter-spacing: 0px;
+        line-height: 1.8;
+    }
+    .build-child2 p {margin-bottom: 10px;}
+    .ccp h3{ font-size: 20px;line-height: 45px;}
+    .bannerp{font-size: 15px;line-height: 1.5;}
+    .cicons1,.cicons5{margin-left: -115px;}
+    .cicons4{margin-top: -140px;}
+    .cicons2,.cicons3,.cicons4,.cicons6,.cicons7{margin-left: -125px;}
+    .cicons1 p, .cicons4 p{width:217px;}
+    .cicons2 p ,.cicons3 p{width:205px;}
+    .cicons6 p{width:162px;}
+    .cicons5 h2{width:125px;}
+    .cicons7 p{width:245px}
+    .allapps1 {width: 400px;}
+    .zohoapps{grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "appgrid"
+                            "appgrid3"
+                            "appgrid2" ; 
+    }
+    
+    .customgrid{
+        display: grid;
+        width: 100%;
+        height:1700px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas:
+            "customerhelp1 customerhelp1 customerhelp1"    
+            "customerhelp4 customerhelp4 customerhelp5"    
+            "customerhelp10 customerhelp11 customerhelp12"  
+            "customerhelp16 customerhelp17 customerhelp18"
+            "customerhelp20         .           .        "
+
+            " customerhelp2 customerhelp2 customerhelp2"
+            " customerhelp6 customerhelp6 customerhelp7"
+            "customerhelp13      .               .     "
+            "customerhelp19 customerhelp19 customerhelp19 " 
+            "customerhelp21 customerhelp21 customerhelp21"
+            
+            "customerhelp3 customerhelp3 customerhelp3"
+            "customerhelp8 customerhelp8 customerhelp9"
+            "customerhelp14 customerhelp15      .     ";}
+
+            .customerhelp1{grid-area:customerhelp1;}
+            .customerhelp2{grid-area:customerhelp2;}
+            .customerhelp4{grid-area:customerhelp4;}
+            .customerhelp5{grid-area:customerhelp5;}
+            .customerhelp6{grid-area:customerhelp6;}
+            .customerhelp7{grid-area:customerhelp7;}
+            .customerhelp8{grid-area:customerhelp8;}
+            .customerhelp9{grid-area:customerhelp9;}
+            .customerhelp10{grid-area:customerhelp10;}
+            .customerhelp11{grid-area:customerhelp11;}
+            .customerhelp12{grid-area:customerhelp12;}
+            .customerhelp13{grid-area:customerhelp13;}
+            .customerhelp14{grid-area:customerhelp14;}
+            .customerhelp15{grid-area:customerhelp15;}
+            .customerhelp16{grid-area:customerhelp16;}
+            .customerhelp17{grid-area:customerhelp17;}
+            .customerhelp18{grid-area:customerhelp18;}
+            .customerhelp19{grid-area:customerhelp19;}
+            .customerhelp20{grid-area:customerhelp20;}
+            .customerhelp21{grid-area:customerhelp21;}
+            .customerhelp20 label{line-height: 4px;}
+            .bfrgrid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                width: 100%;
+                height: auto;
+                grid-template-areas: "bfrfooter1 bfrfooter2"
+                                    "bfrfooter3 bfrfooter4";
+            }
+            .bfrfooter1 p,.bfrfooter2 p{width:350px !important; }
+            .bfrfooter1,.bfrfooter2{margin-bottom:20px;}
+            .bfrfooter3,.bfrfooter4{margin-bottom: 136px;}
+            .innerfooter{padding:20px 20px 0 20px}
+            .innerfooter1 { padding: 0 10px 0 10px;}
+            .contacts{display: none !important;}
+            .abouts{padding: 0 !important;}
+            .outerfooter .innerfooter1>div{padding: 0 20px 0 0;min-width: 230px;}
+    
+    }
+
+    @media only screen and (max-width:950px){
+    .crmbanner {
+        display: grid;
+        width: 100%;
+        height: 700px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+             "platform  platform "
+            "fapp fapp2"
+            "fapp3 fapp4";
+    }
+    .crmdiv{flex-grow: 2;}
+    .crms{margin-left: -125px !important;}
+    .card-icon {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        margin: 0 20px;
+        height: 1000px;
+        grid-template-areas:
+            "cicon1 cicon2"
+            "cicon3 cicon4"
+            "cicon5 cicon6"
+            "cicon7 .";
+    }
+    .zcustomer-section-part h2{font-size: 30px;}
+}
+@media only screen and (max-width:800px){
+    .abouts{display:none !important;}
+}
+
+@media only screen and (max-width:750px){
+    .header-wrap{display:none !important;}
+    .bfrfooter1 p,.bfrfooter2 p{width:250px !important; }
+    .outerfooter .innerfooter1>div{padding: 0 20px 0 0;min-width: 213px;}
+}
+
+@media only screen and (max-width:500px){
+    .crmbanner {
+        display: grid;
+        width: 100%;
+        height: 1000px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+             "platform "
+            "fapp"
+            "fapp2"
+            "fapp3"
+            "fapp4";
+    }
+    .crmdiv{flex-grow:1;}
+    .crms{margin-left: 15px !important;}
+    .card-icon {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        width: 100%;
+        margin: 0 20px;
+        height: 2000px;
+        grid-template-areas:
+            "cicon1"
+            "cicon2"
+            "cicon3"
+            "cicon4"
+            "cicon5"
+            "cicon6"
+            "cicon7";
+    }
+    .build-card {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 260px;
+        grid-template-areas: "build-child1 build-child2";
+        margin-bottom: 50px;
+    }
+    .build-child1 p{font-size: 14px;margin-left: 7px;}
+    .bfrgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 100%;
+        height: auto;
+        grid-template-areas:
+            "bfrfooter1"
+            " bfrfooter2"
+            "bfrfooter3"
+            "bfrfooter4";
+            margin: auto;
+    }
+    .resources{display: none !important;}
+    .content-wrap>div {
+        display: contents;
+    }
+}
+@media only screen and (max-width:400px){
+    .zcustomer-section-part .content-wrap>div {
+        display:table-caption;
+    }
+    .outerfooter .innerfooter1>div {
+        min-width: 185px;
+    }
+    .content-wrap>div {
+        display: contents;
+    }
+}
+
+@media only screen and (max-width:411px){.outerfooter {width: 110%;}}
+
+
+@media only screen and (max-width:375px){
+.outerfooter .innerfooter1>div {
+    min-width: 184px;
+}
+.outerfooter {
+    width: 105%;}
+}
