@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.container{
+    height: auto;
+    background-color: #f4f4f4;
+}
+
+.header{
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    padding:0px 150px;
+    background-color: #171717;
+   
+}
+
+.header > h2 {
+    padding:16px 10px;
+    color:white;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.header > img{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+/* .content{
+    background-color: #F4F4F4;
+} */
+
+.main{
+    display: grid;
+    margin: auto;
+    height: auto;
+    max-width: 1000px;
+    padding: 40px 0;
+}
+
+.gridcls{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: 'Architects Daughter', cursive;
+    grid-gap: 30px;
+    grid-template-areas: "ghead1 ghead1 ghead1" 
+                        "g1 g2 g3"
+                         "g4 g5 g6"
+                         "g7 g8 g9"
+                         "ghead2 ghead2 ghead2"
+                         "g10 g11 g12"
+                         "g13 g14 g15"
+                         "g16 g17 g18"
+                         "g20 g19 g21";
+}
+.gstyle{
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;    
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 180px;
+}
+ 
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.image:hover{
+    opacity: 0.2;
+}
+
+.c1:hover .overlay {
+    opacity: 0.9;
+}
+  
+.text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.g1{ grid-area: g1;}
+.g2{grid-area: g2;}
+.g3{grid-area: g3;}
+.g4{grid-area: g4;}
+.g5{grid-area: g5;}
+.g6{grid-area: g6;}
+.g7{grid-area: g7;}
+.g8{ grid-area: g8;}
+.g9{ grid-area: g9; }
+.g10{ grid-area: g10;}
+.g11{ grid-area: g11; }
+.g12{ grid-area: g12; }
+.g13{ grid-area: g13; }
+.g14{ grid-area: g14; }
+.g15{ grid-area: g15; }
+.g16{ grid-area: g16; }
+.g17{ grid-area: g17; }
+.g18{ grid-area: g18; }
+.g19{ grid-area: g19; }
+.g20{ grid-area: g20; }
+.g21{ grid-area: g21; }
+
+.ghead2{
+    grid-area: ghead2;
+    font-size:2rem;
+    text-align:center;  
+}
+.ghead1{ grid-area: ghead1;font-size:2rem;
+    text-align:center; }
+
+@media screen and (max-width: 900px) {
+
+    .header{
+        padding:0px 50px;
+        background-color: #171717;
+       
+    }
+
+    .main{
+        max-width: 900px;
+        padding: 40px 40px;
+    }
+
+    .gridcls{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:"ghead1 ghead1" 
+                             "g1 g2"
+                             "g3 g4"
+                             "g5 g6"
+                             "g7 g8"
+                             "g9 g9"
+                             "ghead2 ghead2"
+                             "g10 g11"
+                             "g12 g13"
+                             "g14 g15"
+                             "g16 g17"
+                             "g18 g19";
+    }
+    /* .g9{
+        width:400px;
+        margin: auto;
+    } */
+    .ghead2{
+        font-size:1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .header{
+        padding:0px 50px;
+        background-color: #171717;
+       
+    }
+
+    .main{
+        margin: auto;
+    }
+
+    .gridcls{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: "ghead1"
+                             "g1"
+                             "g2"
+                             "g3"
+                             "g4"
+                             "g5"
+                             "g6"
+                             "g7"
+                             "g8"
+                             "g9"
+                             "ghead2"
+                             "g10"
+                             "g11"
+                             "g12"
+                             "g13"
+                             "g14"
+                             "g15"
+                             "g16"
+                             "g17"
+                             "g18"
+                             "g19";
+    }
+    /* .g9{
+        width:auto;
+    } */
+}
